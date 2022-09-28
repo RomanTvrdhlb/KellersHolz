@@ -1,0 +1,31 @@
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  grid-gap: clamp(20px, 2.5vw, 32px);
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: var(--font-family);
+    color: #ffffff;
+
+    transition: all 0.4s;
+
+    &:hover {
+      color: var(--color-c);
+    }
+  }
+}
+
+
+

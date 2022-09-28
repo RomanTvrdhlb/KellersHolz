@@ -1,28 +1,96 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  width: 100%;
+}
+
 .header {
   display: grid;
-  padding: clamp(15px, 3.509vw, 40px) 0 clamp(15px, 2.807vw, 32px);
+  padding: clamp(30px, 3.281vw, 42px) 0 clamp(30px, 3.594vw, 46px);
 
-  transition: all 0.4s;
+  background-color: transparent;
 
-  grid-gap: clamp(40px, 8.772vw, 100px);
-  grid-template-columns: 94px 1fr auto;
-@include tablet {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+  grid-gap: 91px;
+  grid-template-columns: 196px 1fr auto;
 
-    max-width: 320px;
-    height: 100%;
-    padding: 30px 20px;
+  &-contact {
+    display: flex;
+    align-items: center;
 
-    background-color: var(--bg-i);
-    transform: translateX(-200%);
+    grid-gap: clamp(26px, 4.531vw, 58px);
 
-    grid-gap: 10px;
-    grid-template-columns: 100%;
+@include for-tablet {
+      grid-gap: 48px;
+    }
   }
-  &.active {
-    transform: translate(0);
+  &-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    grid-gap: 12px;
+    &__link {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      font-family: var(--font-family);
+      text-align: right;
+      color: var(--color-d);
+      text-transform: uppercase;
+
+      &.active {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: var(--font-family);
+        text-align: right;
+        color: var(--color-c);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-btn {
+    position: relative;
+
+    &__amount {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      font-family: var(--font-family);
+      text-align: center;
+      color: var(--color-b);
+
+      background-color: var(--color-c);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header-black {
+  background-color: var(--bg-b);
+}
+

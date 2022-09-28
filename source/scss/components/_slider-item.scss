@@ -1,0 +1,67 @@
+.slider-item {
+  position: relative;
+
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 592px;
+
+    transform: translate(-12%, -50%);
+
+    grid-gap: clamp(6px, 1.25vw, 16px);
+  }
+
+  &__title {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(36px, 4.375vw, 56px);
+    line-height: 120%;
+    font-family: "Georgia";
+    text-align: center;
+    color: var(--color-a);
+  }
+  &__signature {
+    position: absolute;
+    top: 55;
+    left: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 119px;
+    font-family: var(--font-family2);
+    color: var(--color-e);
+    letter-spacing: 0.04em;
+
+    transform: translateY(-55%);
+  }
+
+  &__about {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.719vw, 22px);
+    line-height: 120%;
+    font-family: "Georgia";
+    color: var(--color-a);
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(13px, 1.172vw, 15px);
+    line-height: 140%;
+    font-family: "Roboto";
+    color: var(--color-a);
+
+    opacity: 0.8;
+  }
+}

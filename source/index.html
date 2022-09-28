@@ -5,9 +5,40 @@
 <body>
   @include('partials/header.html')
 
-<main>
+  <main>
+    <section class="index-first">
+      <div class="container--mode container">
+        <div class="index-first__box">
+          <div class="main-slider swiper-container">
+            <ul class="slider-list swiper-wrapper">
+              <li class="slider-item swiper-slide">
+                <picture>
+                  <source type='image/webp' srcset='img/index/img1.webp'>
+                  <img width='1520' height='430' src='img/index/img1.png' alt='image'>
+                </picture>
+                <div class="slider-item__inner">
+                  <h2 class="slider-item__title">Keller Holz
+                    <span class="slider-item__signature">Brewing</span>
+                  </h2>
+                  <span class="slider-item__about">Та самая пивоварня где каждый день создают с любовью и заботой
+                    !</span>
+                  <p>Используя вековой опыт пивоварения и самое технологичное оборудование, мы производим пиво
+                    высочайшего качества. Сваренное с любовью и заботой из немецкого солода и хмеля, пиво Kellers
+                    пользуется заслуженным уважением наших потребителей. </p>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-</main>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
 
   @include('partials/footer.html')
 
