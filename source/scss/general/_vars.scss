@@ -1,14 +1,15 @@
 :root {
-  --body-bg:#000000;
+  --body-bg:#141414;
 
 
 
-  --content-width: 1280px;
+  --content-width: 1422px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-width-mode: calc(1520px + var(--container-offset) * 2);
 
   --font-family: "Roboto", sans-serif; // var(--font-family);
+  --font-family1: "Georgia", sans-serif; // var(--font-family1);
   --font-family2: "Georgia-Script", sans-serif; // var(--font-family2);
  
   // text color
@@ -17,8 +18,8 @@
   --color-c: #FFD300; // var(--color-c);
   --color-d: rgba(255, 255, 255, 0.7); // var(--color-d);
   --color-e: #FFF227; // var(--color-e);
+  --color-f: #8E898F; // var(--color-f);
 
-  --color-f: #373737; // var(--color-f);
   --color-g: #000D28; // var(--color-g);
   --color-h: #0067A8; // var(--color-h);
   --color-i:  #BDBDBD; // var(--color-i);
@@ -34,6 +35,7 @@
   --bg-c: #8E898F; // var(--bg-c);
   --bg-g:rgba(238, 85, 20, 0.1);// var(--bg-g);
   --bg-d: #FFD300; // var(--bg-d);
+  --bg-e: rgba(255, 255, 255, 0.3); // var(--bg-e);
 
 
   --bg-f: rgba(18, 101, 225, 0.1); // var(--bg-f);

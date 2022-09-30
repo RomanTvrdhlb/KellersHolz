@@ -1,1 +1,15 @@
 
+.index-first {
+  padding-bottom: 57px;
+
+@include tablet {
+    padding-bottom: clamp(64px, 5.703vw, 73px);
+  }
+
+@include mobile {
+    padding-bottom: 71px;
+  }
+}
+
+
+

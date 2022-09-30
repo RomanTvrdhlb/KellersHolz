@@ -15,8 +15,8 @@
 
     display: flex;
     flex-direction: column;
-    width: 12px;
-    height: 124px;
+    min-width: 12px;
+    min-height: 124px;
 
     transform: translate(-2%, -50%);
 

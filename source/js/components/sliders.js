@@ -44,92 +44,85 @@ const swiper = new Swiper('.main-slider', {
   spaceBetween: 20,
   observer: true,
   observeParents: true,
+  loop: true,
 
   pagination: {
     el: '.swiper-pagination',
-
   },
 });
 
-const tabsSlider = new Swiper('.tabs-content__swiper', {
+const tabsSlider = new Swiper('.catalog-swiper', {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 80,
   observer: true,
   observeParents: true,
   loop:true,
-  speed: 3000,
-
-  autoplay: {
-    delay: 2000,
-  },
-
+  
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
-
-  breakpoints: {
-    // mobile - 320-414
-    320: {
-      slidesPerView: "auto",
-    },
-     // mobile - 414-576
-     414: {
-      slidesPerView: 2,
-    },
-    // mobile + tablet - 576-768
-    576: {
-      slidesPerView: 3,
-      spaceBetween:20,
-    },
-    // desktop >= 768
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    }
-  }
-
-});
-
-const reviewsSwiper = new Swiper('.reviews-swiper', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  observer: true,
-  observeParents: true,
-  loop:true,
-  speed:3000,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
-  autoplay: {
-    delay: 4000,
+  pagination: {
+    el: '.catalog-swiper__pagination',
   },
 
   breakpoints: {
     // mobile - 320-576
-    320: {
+    250: {
       slidesPerView: 1,
+      spaceBetween:0,
     },
      // mobile - 576-768
      576: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
+      spaceBetween: 40,
     },
-    // mobile + tablet - 768-1024
-    768: {
-      slidesPerView: 3,
-      spaceBetween:20,
+     // desktop >= 1024-1240
+     1024: {
+      slidesPerView: 4,
+   
     },
-    // desktop >= 1024
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    }
   }
-
 });
+
+// const reviewsSwiper = new Swiper('.reviews-swiper', {
+//   slidesPerView: 1,
+//   spaceBetween: 20,
+//   observer: true,
+//   observeParents: true,
+//   loop:true,
+//   speed:3000,
+
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+
+//   autoplay: {
+//     delay: 4000,
+//   },
+
+//   breakpoints: {
+//     // mobile - 320-576
+//     320: {
+//       slidesPerView: 1,
+//     },
+//      // mobile - 576-768
+//      576: {
+//       slidesPerView: 2,
+//     },
+//     // mobile + tablet - 768-1024
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween:20,
+//     },
+//     // desktop >= 1024
+//     1024: {
+//       slidesPerView: 1,
+//       spaceBetween: 20,
+//     }
+//   }
+
+// });
 
 
