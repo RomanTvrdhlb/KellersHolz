@@ -39,13 +39,14 @@ for (const mobileSlider of document.querySelectorAll('.mobile-slider')) {
 }
 
 const swiper = new Swiper('.main-slider', {
+  direction: 'vertical',
   slidesPerView: 1,
   spaceBetween: 20,
   observer: true,
   observeParents: true,
 
-  navigation: {
-    nextEl: '.swiper-button-next',
+  pagination: {
+    el: '.swiper-pagination',
 
   },
 });
