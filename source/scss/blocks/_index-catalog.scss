@@ -1,5 +1,15 @@
 .index-catalog {
-  padding-bottom: clamp(80px, 11.252vw, 160px);
+  padding-top: 29px;
+  padding-bottom: clamp(40px, 5.626vw, 80px);
+
+@include tablet {
+    padding-bottom: clamp(16px, 1.336vw, 19px);
+  }
+
+@include mobile {
+    padding-bottom: 18px;
+  }
+
   &__swiper {
     position: relative;
   }

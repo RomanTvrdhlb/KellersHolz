@@ -1,13 +1,13 @@
 
 .index-first {
-  padding-bottom: 57px;
+  padding-bottom: 29px;
 
 @include tablet {
-    padding-bottom: clamp(64px, 5.703vw, 73px);
+    padding-bottom: clamp(32px, 2.602vw, 37px);
   }
 
 @include mobile {
-    padding-bottom: 71px;
+    padding-bottom: 36px;
   }
 }
 

@@ -1,0 +1,12 @@
+.delivery-section {
+  padding-top: clamp(40px, 5.626vw, 80px);
+  padding-bottom: 100px;
+
+@include tablet {
+    padding-top: clamp(16px, 1.336vw, 19px);
+  }
+
+@include mobile {
+    padding-top: 18px;
+  }
+}
