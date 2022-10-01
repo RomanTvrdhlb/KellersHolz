@@ -1,18 +1,29 @@
 .catalog-swiper {
-  max-width: 1422px;
+  width: 100%;
 
 @include for-laptop {
     pointer-events: none;
   }
 
-  &__list {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   &__slide {
-    margin-right: clamp(20px, 4.219vw, 60px);
+    max-width: 290px;
     padding-bottom: 15px;
+
+@include laptop {
+      max-width: 265px;
+    }
+
+@include mobile {
+      max-width: 290px;
+    }
+
+@include for-big-desktop {
+      margin-left: 25px !important;
+    }
+
+    @media (min-width: (1350px)) {
+      margin-left: 11px;
+    }
   }
 
   &__inner {
@@ -21,7 +32,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 290px;
     padding: 16px 0 77px;
 
     grid-gap: 8px;
@@ -39,6 +49,7 @@
     picture {
       display: block;
     }
+
     &--bottom {
       bottom: -23px;
     }
@@ -114,19 +125,19 @@
   }
 
   &__pagination {
-    top: 110%;
+    top: 115%;
     left: 50%;
+    z-index: 30;
 
     display: flex;
     flex-direction: row;
     width: fit-content;
     min-height: 12px;
 
-    transform: translate(-50%, -110%);
+    transform: translate(-50%, -115%);
 
 @include for-mobile {
       display: none;
     }
   }
 }
-

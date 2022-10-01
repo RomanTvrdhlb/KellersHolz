@@ -52,8 +52,8 @@ const swiper = new Swiper('.main-slider', {
 });
 
 const tabsSlider = new Swiper('.catalog-swiper', {
-  slidesPerView: 4,
-  spaceBetween: 80,
+  slidesPerView: 'auto',
+  spaceBetween: 50,
   observer: true,
   observeParents: true,
   loop:true,
@@ -67,20 +67,19 @@ const tabsSlider = new Swiper('.catalog-swiper', {
 
   breakpoints: {
     // mobile - 320-576
-    250: {
-      slidesPerView: 1,
-      spaceBetween:0,
+    320: {
+      spaceBetween:40,
     },
-     // mobile - 576-768
-     576: {
-      slidesPerView: 'auto',
-      spaceBetween: 40,
-    },
-     // desktop >= 1024-1240
-     1024: {
+     // desktop >= 1240
+     1240: {
       slidesPerView: 4,
-   
     },
+
+    1350: {
+      slidesPerView: 'auto',
+      spaceBetween: 50,
+    }
+
   }
 });
 
