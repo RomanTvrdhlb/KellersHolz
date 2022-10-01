@@ -11,6 +11,17 @@
     max-width: 120px;
 
     grid-gap: 20px;
+
+    &:hover {
+      .delivery-sublist__img {
+        img {
+          border: 3px solid var(--color-g);
+        }
+      }
+      .delivery-sublist__name {
+        color: var(--color-f);
+      }
+    }
   }
 
   &__name {
@@ -67,9 +78,14 @@
     position: relative;
 
 
-    img,
-    picture {
+
+    img {
       width: 100%;
+
+      border: 3px solid transparent;
+      border-radius: 50%;
+
+      transition: all 0.4s;
     }
   }
 
