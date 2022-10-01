@@ -1,37 +1,28 @@
-.mail-btn {
+.black-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(233px, 17.063vw, 273px);
-  height: 38px;
+  min-width: 194px;
+  min-height: 48px;
 
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   font-family: var(--font-family);
   color: var(--color-a);
+  text-transform: uppercase;
 
-  border: solid 1px var(--border-a);
+  background-color: var(--bg-b);
+  border-radius: 10px;
 
   transition: all 0.4s;
 
-  grid-gap: 11px;
-
-  svg {
-    transition: all 0.4s;
-
-    fill: var(--svg-fill);
-  }
-
   &:hover {
-    background-color: var(--bg-c);
-
-    svg {
-      fill: var(--color-a);
-    }
+    transform: scaleX(1.05);
   }
 }
+
 
 .yellow-btn {
   position: relative;

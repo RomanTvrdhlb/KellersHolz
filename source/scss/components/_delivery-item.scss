@@ -1,0 +1,123 @@
+.delivery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s;
+  &:hover {
+    background-color: var(--bg-a);
+
+    .delivery-item {
+      &__title {
+        color: var(--color-b);
+      }
+
+      &__link {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &__name {
+        color: var(--color-b);
+        svg {
+          fill: var(--bg-b);
+        }
+      }
+    }
+    .delivery-sublist {
+      &__name {
+        color: var(--color-b);
+      }
+    }
+  }
+
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    padding: 32px 0;
+
+    border-top: 1px solid var(--border-a);
+    border-bottom: 1px solid var(--border-a);
+  }
+
+  &__inner {
+    display: grid;
+
+    grid-gap: 28px 46px;
+    grid-template-columns: 200px auto;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(20px, 1.547vw, 22px);
+    line-height: 120%;
+    font-family: var(--font-family1);
+    color: var(--color-g);
+
+    transition: all 0.4s;
+
+    grid-column: span 2;
+  }
+
+  p {
+    max-width: 298px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(13px, 0.985vw, 14px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-f);
+
+    grid-column: span 2;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: var(--font-family);
+    color: var(--color-f);
+    text-transform: uppercase;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.4s;
+
+    grid-gap: 12px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: var(--font-family);
+    color: var(--color-a);
+    text-transform: uppercase;
+
+    transition: all 0.4s;
+
+    grid-column: span 2;
+    grid-gap: 16px;
+
+    svg {
+      transition: all 0.4s;
+
+      fill: var(--bg-a);
+    }
+  }
+}
