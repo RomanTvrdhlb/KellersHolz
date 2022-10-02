@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   width: 100%;
   width: 100%;
+  max-width: 1600px;
   min-height: -webkit-fill-available;
   margin: 0 auto;
   padding: 0;
@@ -17,6 +18,7 @@ body {
   color: var(--color-b);
 
   background-color: var(--body-bg);
+  box-shadow: 0 0 80px 15px #000000;
 
   @include tablet {
     width: 100%;
@@ -230,21 +232,21 @@ input[type="number"] {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-g);
+    background-color: var(--bg-b);
     cursor: pointer;
 
-    transition: all 0.4s;
+    transition: all 0.4s;;
 
     &:hover {
-      background-color: #048ee3;
+      background-color: var(--color-g);
     }
   }
 
   &::-webkit-scrollbar-track {
-    background-color: var(--bg-h);
+    background-color: transparent;
 
     &:hover {
-      background-color: var(--bg-h);
+      background-color: transparent;
     }
   }
 

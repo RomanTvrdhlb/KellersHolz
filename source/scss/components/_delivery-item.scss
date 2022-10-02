@@ -5,6 +5,11 @@
   padding: 0 calc((1422px - 1280px) / 2);
 
   transition: all 0.4s;
+
+@include tablet {
+    padding: 10px;
+  }
+
   &:hover {
     background-color: var(--bg-a);
     cursor: url(../../img/cur.png), auto !important;
@@ -96,7 +101,7 @@
 
     transition: all 0.4s;
 
-    grid-gap: 12px;
+    grid-gap: clamp(5px, 0.844vw, 12px);
   }
 
   &__name {

@@ -85,8 +85,8 @@
 
 .lift {
   position: fixed;
-  bottom: 6%;
-  left: 10%;
+  bottom: 3%;
+  left: clamp(10px, 2.813vw, 30px);
   z-index: 50;
 
   display: flex;

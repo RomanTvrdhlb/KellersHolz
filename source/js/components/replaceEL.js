@@ -3,6 +3,7 @@ let mobileParrent = document.querySelector('.mobile-menu');
 let desktopParrent = document.querySelector('.header');
 let imagesAccordion = document.querySelector('.main-accordion--images');
 let breakpointAccordion = 1024;
+let breakpointsublist = 576;
 
 
 const replaceMobileMenu = (element, parentDesktop, parentMobile) => {
@@ -22,6 +23,15 @@ window.addEventListener('DOMContentLoaded', () => {
   replaceMobileMenu(headerBottom, desktopParrent, mobileParrent);
 });
 
+const replaceSublistItem = (element, parentDesktop, parentMobile) => {
+  let containerWidth = document.documentElement.clientWidth;
+  if (containerWidth <= breakpointsublist) {
+    parentMobile.insertAdjacentElement('beforeend', element);
+  };
+  if (containerWidth > breakpointsublist) {
+    parentDesktop.insertAdjacentElement('afterend', element);
+  }
+}
 
 
 const replaceAcordionTitle = (element, parentDesktop, parentMobile) => {

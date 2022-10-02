@@ -11,6 +11,12 @@
   grid-gap: 29px;
 
 @include mobile {
+    .main-nav {
+      display: none;
+    }
+  }
+
+@include mobile {
     padding-bottom: 31px;
   }
 

@@ -1,4 +1,7 @@
 .about-section {
+  position: relative;
+
+  min-height: 721px;
   padding-top: 35px;
   padding-bottom: 37px;
 
@@ -15,13 +18,10 @@
     z-index: -1;
 
     min-width: 1600px !important;
-    min-height: 721px;
+    height: 100%;
     margin: 0 auto !important;
 
     transform: translateX(-50%);
-
-
-
     img,
     picture {
       width: 100%;

@@ -5,8 +5,14 @@
   grid-gap: clamp(24px, 1.899vw, 27px);
   grid-template-columns: 310px 185px 1fr;
 
+@include small-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 @include mobile {
     padding-top: 24px;
+
+    grid-template-columns: 100%;
   }
 
   &__name {
@@ -19,6 +25,10 @@
     line-height: 15px;
     font-family: var(--font-family);
     color: var(--color-f);
+
+@include mobile {
+      justify-content: center;
+    }
   }
 
   &__dev {
@@ -34,6 +44,16 @@
     color: var(--color-f);
 
     grid-gap: 12px;
+
+@include small-tablet {
+      grid-column: 2/span 3;
+    }
+
+@include mobile {
+      justify-content: center;
+
+      grid-column: initial;
+    }
   }
 }
 
@@ -43,6 +63,11 @@
   align-items: center;
 
   grid-gap: 17px !important;
+
+@include small-tablet {
+    display: none !important;
+  }
+
   &__lang {
     font-style: normal;
     font-weight: 400;

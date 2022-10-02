@@ -2,11 +2,17 @@ import { addCustomClass,removeCustomClass } from "../functions/customFunctions";
 
  const lift = document.querySelector('[data-lift]');
 
+ console.log('[data-lift]');
+
+ 
  if (lift) {
   let timeOut;
-
+  
   window.onscroll = function () {
+    
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+    console.log('lift');
     if (scrolled > 500) {
       addCustomClass(lift, "show");
     } else {

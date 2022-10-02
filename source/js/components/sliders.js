@@ -74,8 +74,16 @@ const tabsSlider = new Swiper('.catalog-swiper', {
   breakpoints: {
     // mobile - 320-576
     320: {
+      centeredSlides: true,
+      spaceBetween:40,
+    
+    },
+    // tablet - 576-1240
+    576: {
+      centeredSlides: false,
       spaceBetween:40,
     },
+    
     
      // desktop >= 1240
      1240: {

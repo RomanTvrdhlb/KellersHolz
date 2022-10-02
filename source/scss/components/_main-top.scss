@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-// padding-bottom: clamp(20px, 1.969vw, 28px);
   padding: 0 calc((1422px - 1280px) / 2) clamp(20px, 1.969vw, 28px) calc((1422px - 1280px) / 2);
+
+@include tablet {
+    padding: 0 10px clamp(20px, 1.969vw, 28px);
+  }
 
   &__title {
     font-style: normal;
@@ -13,5 +15,11 @@
     line-height: 115%;
     font-family: var(--font-family1);
     color: var(--color-a);
+  }
+
+  &__btn {
+    @include mobile {
+      display: none;
+    }
   }
 }
