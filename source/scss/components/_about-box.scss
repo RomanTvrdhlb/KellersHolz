@@ -1,8 +1,10 @@
 .about-box {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   max-width: 640px;
-  padding: 0 calc((1422px - 1280px) / 2);
+  padding: 77px calc((1422px - 1280px) / 2) 99px;
 
   grid-gap: clamp(31px, 4.219vw, 60px);
   &__logo {

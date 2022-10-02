@@ -39,7 +39,6 @@ for (const mobileSlider of document.querySelectorAll('.mobile-slider')) {
 }
 
 const swiper = new Swiper('.main-slider', {
-  direction: 'vertical',
   slidesPerView: 1,
   spaceBetween: 20,
   observer: true,
@@ -49,6 +48,13 @@ const swiper = new Swiper('.main-slider', {
   pagination: {
     el: '.swiper-pagination',
   },
+
+  breakpoints: {
+     // desktop >= 1240
+     1024: {
+      direction: 'vertical',
+    },
+  }
 });
 
 const tabsSlider = new Swiper('.catalog-swiper', {
@@ -70,6 +76,7 @@ const tabsSlider = new Swiper('.catalog-swiper', {
     320: {
       spaceBetween:40,
     },
+    
      // desktop >= 1240
      1240: {
       slidesPerView: 4,

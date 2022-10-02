@@ -1,0 +1,37 @@
+.footer-top {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--border-a);
+
+  grid-gap: 29px;
+
+@include mobile {
+    padding-bottom: 31px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    grid-gap: 24px;
+  }
+
+  &__link {
+    svg {
+      transition: all 0.4s;
+
+      fill: var(--bg-c);
+
+      &:hover {
+        fill: var(--bg-d);
+      }
+    }
+  }
+}
+
+
