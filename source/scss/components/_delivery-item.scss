@@ -6,6 +6,7 @@
   transition: all 0.4s;
   &:hover {
     background-color: var(--bg-a);
+    cursor: url(../../img/cur.png), auto !important;
 
     .delivery-item {
       &__title {
@@ -83,8 +84,8 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: clamp(13px, 0.985vw, 14px);
+    line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-f);
     text-transform: uppercase;

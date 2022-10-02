@@ -1,0 +1,9 @@
+.about-section {
+  padding-top: 35px;
+  padding-bottom: 73px;
+
+@include mobile {
+    padding-top: 40px;
+    padding-bottom: 86px;
+  }
+}

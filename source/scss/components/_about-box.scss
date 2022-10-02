@@ -1,0 +1,33 @@
+.about-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  padding: 0 calc((1422px - 1280px) / 2);
+
+  grid-gap: clamp(31px, 4.219vw, 60px);
+  &__logo {
+    @include for-mobile {
+      margin-bottom: -10px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(13px, 1.055vw, 15px);
+    line-height: 140%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    grid-gap: clamp(15px, 3.094vw, 44px);
+  }
+
+  &__link {
+    visibility: visible;
+    opacity: 1;
+  }
+}
