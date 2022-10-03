@@ -1,9 +1,6 @@
 import { addCustomClass,removeCustomClass } from "../functions/customFunctions";
 
  const lift = document.querySelector('[data-lift]');
-
- console.log('[data-lift]');
-
  
  if (lift) {
   let timeOut;

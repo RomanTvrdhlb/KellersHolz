@@ -8,8 +8,8 @@ import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} fro
 let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');
 
-const burger = document.querySelector(".burger");
-const mobileMenu = document.querySelector(".header");
+const burger = document.querySelector('.burger');
+const mobileMenu = document.querySelector('.mobile-header');
 
 
 // let burger = document.querySelector('.burger');

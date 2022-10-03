@@ -1,9 +1,9 @@
 .shop-section {
   padding-top: clamp(35px, 4.219vw, 60px);
-  padding-bottom: 35px;
+  padding-bottom: 70px;
 
 @include mobile {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   &__inner {

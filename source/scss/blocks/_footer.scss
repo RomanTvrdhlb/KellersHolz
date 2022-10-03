@@ -1,20 +1,25 @@
 .footer {
   position: relative;
 
-  padding: 37px calc((1422px - 1280px) / 2) 20px;
+  padding: 73px calc((1422px - 1280px) / 2) 20px;
 
 @include small-tablet {
-    padding: 37px 10px 20px;
+    padding: 73px 10px 20px;
   }
 
 @include mobile {
-    padding: 43px 10px 27px ;
+    padding: 86px 10px 27px ;
   }
+}
+
+footer {
+  position: relative;
+
 
   &:before {
     content: "";
     position: absolute;
-    top: -65%;
+    top: 0;
     left: 50%;
 
     width: 92px;
@@ -24,7 +29,6 @@
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: contain;
-    transform: translate(-50%,65%);
+    transform: translate(-50%, -45%);
   }
 }
-

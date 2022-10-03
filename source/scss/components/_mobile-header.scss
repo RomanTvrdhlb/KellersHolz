@@ -1,12 +1,82 @@
 .mobile-header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  padding: clamp(15px, 3.509vw, 40px) 0 clamp(15px, 2.807vw, 32px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
-@include for-tablet {
-    display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 350px;
+  max-width: 375px;
+  height: 100%;
+  padding: clamp(30px, 3.281vw, 42px) 16px clamp(30px, 3.594vw, 46px);
+  overflow-y: scroll;
+
+  background-color: var(--bg-i);
+  transform: translateX(-300%);
+
+  transition: all 0.4s;
+
+  grid-gap: 30px;
+
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__contact {
+    grid-gap: 26px;
+  }
+  &__btn {
+    svg {
+      width: 21px;
+      height: 25px;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-gap: 30px;
+  }
+
+  &__logo {
+    width: fit-content !important;
+    svg {
+      width: 126px;
+      height: 41px;
+    }
+  }
+  &__nav {
+    display: flex !important;
+    width: 100%;
+  }
+  &__list {
+    flex-direction: column;
+
+    grid-gap: 20px;
+    .nav-list__link {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    .nav-list__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 20px;
+
+      border-bottom: 1px solid  var(--color-d-shadow);
+    }
+  }
+  &__switch {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    order: 3 !important;
   }
 }
 
@@ -20,12 +90,13 @@
   grid-gap: 7px;
 
   span {
-    width: 20px;
+    width: 35px;
     height: 2px;
 
-    background-color: var(--color-c);
+    background-color: var(--bg-a);
 
     transition: all 0.4s;
+    ;
   }
 
   &.active {
@@ -35,14 +106,20 @@
       }
 
       &:first-child {
-        background-color: var(--bg-b);
-        transform: rotate(45deg) translate(32%, 262%);
+        background-color: var(--bg-a);
+        transform: rotate(45deg) translate(22%, 305%);
       }
 
       &:last-child {
-        background-color: var(--bg-b);
-        transform: rotate(-45deg) translate(37%, -342%);
+        background-color: var(--bg-a);
+        transform: rotate(-45deg) translate(20%, -275%);
       }
     }
+  }
+}
+
+.mobile-header.active ~ .header {
+  .header-contact {
+    opacity: 0;
   }
 }

@@ -2,7 +2,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 100;
 
   width: 100%;
 }
@@ -16,14 +16,34 @@ header {
   grid-gap: 91px;
   grid-template-columns: 196px 1fr auto;
 
+@include laptop {
+    grid-gap: clamp(20px, 4.993vw, 71px);
+  }
+
   &-contact {
     display: flex;
     align-items: center;
+    order: 2;
+
+    transition: opacity 0.4s;
 
     grid-gap: clamp(26px, 4.531vw, 58px);
 
+@include laptop {
+      justify-content: flex-end;
+    }
+
 @include for-tablet {
       grid-gap: 48px;
+    }
+  }
+
+  &-burger {
+    justify-content: center;
+    order: 3;
+
+@include for-laptop {
+      display: none;
     }
   }
   &-switch {
@@ -32,6 +52,11 @@ header {
     align-items: center;
 
     grid-gap: 12px;
+
+@include mobile {
+      display: none;
+    }
+
     &__btn {
       font-style: normal;
       font-weight: 300;
@@ -87,7 +112,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  order: 1;
+  width: fit-content;
 }
 
 .header-black {

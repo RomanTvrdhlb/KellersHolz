@@ -1,10 +1,19 @@
 .delivery-sublist {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: stretch;
 
+  grid-column: 3;
   grid-gap: clamp(30px, 4.43vw, 53px);
+  grid-row: 1/ span 4;
 
+@include mobile {
+    justify-content: center;
+    order: 4;
 
+    grid-column: initial;
+    grid-row: initial;
+  }
 
   &__item {
     display: flex;
@@ -14,17 +23,7 @@
 
     grid-gap: 20px;
 
-// @include laptop {
-    //       &:nth-child(3) {
-    //         display: none;
-    //       }
-    //     }
-    // @include small-tablet {
-    //       &:nth-child(1) {
-    //         display: none;
-    //       }
-    //     }
-    @include for-laptop {
+@include for-laptop {
       &:nth-child(3) {
         display: flex !important;
       }
@@ -94,6 +93,11 @@
   }
 
   &__link {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -107,14 +111,12 @@
   &__img {
     position: relative;
 
-    width: 100%;
+    width: 130px;
+    height: 130px;
 
 
     img,
     picture {
-      display: block;
-      width: 100% !important;
-
       border: 3px solid transparent;
       border-radius: 50%;
 

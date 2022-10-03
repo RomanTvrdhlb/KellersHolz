@@ -6,8 +6,14 @@
 
   transition: all 0.4s;
 
-@include tablet {
+  @include tablet {
     padding: 10px;
+  }
+
+  &:first-child {
+    .delivery-item__box {
+      border-top: 1px solid var(--border-a);
+    }
   }
 
   &:hover {
@@ -46,15 +52,34 @@
     max-width: 1280px;
     padding: 32px 0;
 
-    border-top: 1px solid var(--border-a);
     border-bottom: 1px solid var(--border-a);
   }
 
+
+  &__btn {
+    width: fit-content;
+
+    grid-column: 1;
+
+@include mobile {
+      order: 5;
+
+      grid-column: initial;
+    }
+  }
   &__inner {
     display: grid;
+    align-items: center;
+    width: 100%;
 
     grid-gap: 28px 46px;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 200px auto 1fr;
+
+@include mobile {
+      align-items: flex-start;
+
+      grid-template-columns: 100%;
+    }
   }
 
   &__title {
@@ -68,6 +93,12 @@
     transition: all 0.4s;
 
     grid-column: span 2;
+
+@include mobile {
+      order: 1;
+
+      grid-column: initial;
+    }
   }
 
   p {
@@ -81,6 +112,12 @@
     color: var(--color-f);
 
     grid-column: span 2;
+
+@include mobile {
+      order: 2;
+
+      grid-column: initial;
+    }
   }
 
   &__link {
@@ -102,6 +139,15 @@
     transition: all 0.4s;
 
     grid-gap: clamp(5px, 0.844vw, 12px);
+
+@include mobile {
+      order: 6;
+
+      visibility: visible;
+      opacity: 1;
+
+      grid-column: initial;
+    }
   }
 
   &__name {
@@ -120,6 +166,12 @@
 
     grid-column: span 2;
     grid-gap: 16px;
+
+@include mobile {
+      order: 3;
+
+      grid-column: initial;
+    }
 
     svg {
       transition: all 0.4s;

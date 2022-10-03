@@ -2,7 +2,11 @@
 .main-nav {
   display: flex;
   align-items: center;
+  order: 2;
   width: fit-content;
+@include laptop {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -19,15 +23,16 @@
     font-size: 15px;
     line-height: 18px;
     font-family: var(--font-family);
-    color: #ffffff;
+    color: var(--color-a);
 
     transition: all 0.4s;
 
     &:before {
       content: "";
       position: absolute;
+      right: 0;
       bottom: -3px;
-      left: 0;
+      left: auto;
 
       width: 0;
       height: 1px;
@@ -41,6 +46,9 @@
       color: var(--color-c);
 
       &::before {
+        right: auto;
+        left: 0;
+
         width: 100%;
       }
     }
