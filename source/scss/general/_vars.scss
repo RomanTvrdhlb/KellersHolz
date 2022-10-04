@@ -7,6 +7,7 @@
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-width-mode: calc(1520px + var(--container-offset) * 2);
+  --container-width-mini: calc(1282px + var(--container-offset) * 2);
 
   --font-family: "Roboto", sans-serif; // var(--font-family);
   --font-family1: "Georgia", sans-serif; // var(--font-family1);
@@ -21,10 +22,10 @@
   --color-e: #FFF227; // var(--color-e);
   --color-f: #8E898F; // var(--color-f);
   --color-g: #FED105; // var(--color-g);
+  --color-h: #808285; // var(--color-h);
+  --color-i:  #FED105; // var(--color-i);
+  --color-j:  #8E898F; // var(--color-j);
 
-  --color-h: #0067A8; // var(--color-h);
-  --color-i:  #BDBDBD; // var(--color-i);
-  --color-j:  #6A6A6A; // var(--color-j);
   --color-k: #F17B7B; // var(--color-k);
 
   --color-l: #FFAE35; // var(--color-l);

@@ -1,0 +1,47 @@
+.tabs-nav {
+  display: flex;
+  align-items: center;
+
+  grid-gap: clamp(30px, 5.626vw, 80px);
+  &__btn {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(15px, 1.195vw, 17px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-h);
+    text-transform: uppercase;
+
+    opacity: 0.5;
+
+    transition: all 0.4s;
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      left: auto;
+
+      width: 0;
+      height: 1px;
+
+      background-color: var(--bg-d);
+
+      transition: all 0.4s ease-out;
+    }
+    &:hover {
+      color: var(--color-i);
+
+      opacity: 1;
+
+      &::before {
+        right: auto;
+        left: 0;
+
+        width: 100%;
+      }
+    }
+  }
+}

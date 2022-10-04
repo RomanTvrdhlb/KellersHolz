@@ -1,0 +1,8 @@
+.about-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 calc((1520px - 1280px) / 2) 60px;
+
+  grid-gap: 73px;
+}

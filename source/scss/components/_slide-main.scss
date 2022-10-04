@@ -1,0 +1,101 @@
+.slide-main {
+  position: relative;
+
+  max-width: 800px;
+  min-height: 400px;
+  &__galery {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__btn {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.625 1H1v5.625M10.375 1H16v5.625m-15 3.75V16h5.625M16 10.375V16h-5.625' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15px 15px;
+  }
+  &__inner {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+
+    transform: translate(-6%,-5%);
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    img,
+    picture {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: var(--font-family1);
+    color: var(--color-a);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+}
+
+.about-swiper__btn {
+  &-next {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    z-index: 80;
+
+    width: 86px;
+    height: 34px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m82.585 17-9.106-9.067M82.585 17l-9.106 9.066M82.585 17H13.659' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translate(-68%, -50%);
+  }
+
+  &-prev {
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    z-index: 80;
+
+    width: 86px;
+    height: 34px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m3.415 17 9.106-9.067M3.415 17l9.106 9.066M3.415 17h68.926' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translate(8%, -50%);
+    opacity: 0.3;
+  }
+}

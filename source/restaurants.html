@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header.html')
+
+  <main>
+    <div class="restaurants-container main-container" style="background-image:url(img/sprite/backmain3.svg);">
+      <section class="restaurants-section">
+        <div class="container container--mini">
+          <div class="restaurants-top main-top">
+            <div class="main-top__pages">
+              <a href="index.html" class="main-top__link main-top__link--arrow">Главная</a>
+              <a href="restaurants.html" class="main-top__link">Рестораны</a>
+            </div>
+            <h2 class="main-top__title">Рестораны</h2>
+          </div>
+
+          <ul class="restaurants-list">
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img1.webp'>
+                    <img width='364' height='187' src='img/restaurants/img1.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo2'></use>
+                  </svg>
+                  restaurant
+                </span>
+                <h3 class="delivery-item__title">Keller Holz Grill & Brew</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img2.webp'>
+                    <img width='364' height='187' src='img/restaurants/img2.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo2'></use>
+                  </svg>
+                  restaurant
+                </span>
+                <h3 class="delivery-item__title">Keller Holz Beer Garden</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img3.webp'>
+                    <img width='364' height='187' src='img/restaurants/img3.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo3'></use>
+                  </svg>
+                  fastfood
+                </span>
+                <h3 class="delivery-item__title">Wurst</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img4.webp'>
+                    <img width='364' height='187' src='img/restaurants/img4.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo2'></use>
+                  </svg>
+                  restaurant
+                </span>
+                <h3 class="delivery-item__title">Keller Holz Grill & Brew</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img5.webp'>
+                    <img width='364' height='187' src='img/restaurants/img5.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo2'></use>
+                  </svg>
+                  restaurant
+                </span>
+                <h3 class="delivery-item__title">Keller Holz Rotisserie</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+            <li class="restaurants-item">
+              <a href="about.html" class="restaurants-item__link">
+                <div class="restaurants-list__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/restaurants/img6.webp'>
+                    <img width='364' height='187' src='img/restaurants/img6.png' alt='image'>
+                  </picture>
+                </div>
+                <span class="delivery-item__name">
+                  <svg width="24" height="13">
+                    <use href='img/sprite/sprite.svg#logo2'></use>
+                  </svg>
+                  restaurant
+                </span>
+                <h3 class="delivery-item__title">Keller Holz Gastropub</h3>
+                <p>Мясной ресторан с одной из самых крупных в мире картой стейков и кухней российских провинций</p>
+              </a>
+
+            </li>
+
+          </ul>
+        </div>
+
+
+      </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+
+
+  @include('partials/overlay.html')
+
+  <button class="lift" data-lift>
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

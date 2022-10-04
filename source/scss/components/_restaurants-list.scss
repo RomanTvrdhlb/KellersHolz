@@ -1,0 +1,32 @@
+.restaurants-list {
+  display: grid;
+
+  grid-gap: clamp(30px, 6.399vw, 91px) clamp(10px, 3.586vw, 51px);
+  grid-template-columns: repeat(3, 1fr);
+
+@include laptop {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+@include tablet {
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+
+  &__img {
+    position: relative;
+    left: 0;
+
+    width: 100%;
+    height: 187px;
+    padding-bottom: 13px;
+
+    transition: all 0.4s;
+    img,
+    picture {
+      display: block;
+      width: 100%;
+    }
+  }
+}

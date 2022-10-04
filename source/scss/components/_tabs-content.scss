@@ -1,0 +1,28 @@
+.tabs-content {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: clamp(30px, 4.219vw, 60px);
+  }
+  &__text {
+    max-width: 745px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+
+  &__box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    grid-gap: 40px;
+  }
+}
+

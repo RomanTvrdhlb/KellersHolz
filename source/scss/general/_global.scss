@@ -84,7 +84,6 @@ a {
 
 main {
   flex: 1 0 auto;
-  padding-top: var(--header-height);
 }
 
 button {
@@ -188,6 +187,10 @@ input[type="number"] {
 
   &--mode {
     max-width: var(--container-width-mode);
+  }
+
+  &--mini {
+    max-width: var(--container-width-mini);
   }
 }
 

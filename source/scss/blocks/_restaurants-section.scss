@@ -1,0 +1,22 @@
+.restaurants-section {
+  position: relative;
+
+  padding: clamp(30px, 4.219vw, 60px) 0 clamp(80px, 11.322vw, 161px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background-color: var(--bg-b);
+    transform: translateY(-50%);
+
+@include tablet {
+      transform: translateY(-165%);
+    }
+  }
+}

@@ -19,6 +19,9 @@ header {
 @include laptop {
     grid-gap: clamp(20px, 4.993vw, 71px);
   }
+  &--black {
+    background-color: var(--bg-b);
+  }
 
   &-contact {
     display: flex;

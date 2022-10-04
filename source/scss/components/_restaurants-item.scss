@@ -1,0 +1,28 @@
+.restaurants-item {
+  max-width: 366px;
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: all 0.4s;
+
+    grid-gap: 15px;
+    &:hover {
+      .restaurants-list__img {
+        box-shadow: 0 5px 16px 20px #111111;
+        transform: scale(1.05);
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      font-family: var(--font-family);
+      color: var(--color-h);
+
+      opacity: 0.5;
+    }
+  }
+}

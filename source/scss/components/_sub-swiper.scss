@@ -1,0 +1,11 @@
+.sub-swiper {
+  width: 100%;
+  max-width: 600px;
+  margin-right: -13%;
+
+  pointer-events: none;
+
+  &__slide {
+    width: fit-content;
+  }
+}
