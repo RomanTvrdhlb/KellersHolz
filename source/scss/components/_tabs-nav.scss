@@ -1,8 +1,13 @@
 .tabs-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   grid-gap: clamp(30px, 5.626vw, 80px);
+
+@include mobile {
+    justify-content: center;
+  }
   &__btn {
     position: relative;
 
@@ -17,6 +22,14 @@
     opacity: 0.5;
 
     transition: all 0.4s;
+    &.active {
+      color: var(--color-i);
+
+      opacity: 1;
+      &::before {
+        width: 100%;
+      }
+    }
     &:before {
       content: "";
       position: absolute;
@@ -34,6 +47,7 @@
     &:hover {
       color: var(--color-i);
 
+      transform: scale(1.1);
       opacity: 1;
 
       &::before {

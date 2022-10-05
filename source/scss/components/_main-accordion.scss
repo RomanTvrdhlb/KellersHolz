@@ -1,10 +1,26 @@
 .main-accordion {
   display: grid;
 
-  grid-gap: 25px 80px;
+  grid-gap: clamp(30px, 5.626vw, 80px);
   grid-template-columns: repeat(2, 1fr);
+
+@include small-tablet {
+    grid-gap: 25px;
+    grid-template-columns: 100%;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: 25px;
+
+@include tablet {
+      align-items: center;
+    }
+  }
   &__content {
-    @include for-small-tablet {
+    @include for-tablet {
       height: initial;
       max-height: initial;
       overflow: initial;
@@ -15,8 +31,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
-    height: fit-content;
 
     grid-gap: 15px;
   }
@@ -30,6 +44,15 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
     grid-gap: 20px;
+
+@include for-tablet {
+      pointer-events: none;
+    }
+
+@include tablet {
+      justify-content: center;
+    }
+
     &.active {
       .main-accordion__btn-icon {
         transform: scale(1);
@@ -40,7 +63,7 @@
 
       transition: all 0.4s;
 
-@include for-small-tablet {
+@include for-tablet {
         display: none;
       }
 

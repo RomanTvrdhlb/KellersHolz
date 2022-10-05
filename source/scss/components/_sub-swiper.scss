@@ -5,6 +5,11 @@
 
   pointer-events: none;
 
+@include laptop {
+    display: none;
+  }
+
+
   &__slide {
     width: fit-content;
   }

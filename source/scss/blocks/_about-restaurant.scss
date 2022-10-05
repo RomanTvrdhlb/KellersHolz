@@ -6,6 +6,10 @@
     flex-direction: column;
     padding: 0 calc((1520px - 1280px) / 2);
 
-    grid-gap: 83px;
+    grid-gap: clamp(30px, 5.837vw, 83px);
+
+@include tablet {
+      padding: 0 10px;
+    }
   }
 }

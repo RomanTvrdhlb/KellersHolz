@@ -9,7 +9,7 @@
   &__pagination {
     position: absolute;
     bottom: -10%;
-    left: 62%;
+    left: 67%;
 
     font-style: normal;
     font-weight: 700;
@@ -18,7 +18,18 @@
     font-family: var(--font-family1);
     color: var(--color-j);
 
-    transform: translate(-75%,10%);
+    transform: translate(-75%, 10%);
+
+@include tablet {
+      left: 90%;
+
+      transform: translate(-78%, 10%);
+    }
+
+@include small-tablet {
+      display: none;
+    }
+
     .swiper-pagination-current {
       font-style: normal;
       font-weight: 700;

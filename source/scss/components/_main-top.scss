@@ -25,9 +25,10 @@
 
   &__pages {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
-    grid-gap: 52px;
+    grid-gap: 11px 52px;
   }
 
   &__link {
@@ -81,6 +82,11 @@
 
   grid-gap: 11px clamp(70px, 12.658vw, 180px);
   grid-template-columns: repeat(2, 1fr);
+
+@include laptop {
+    grid-template-columns: 100%;
+  }
+
   ;
   &__inner {
     display: flex;
@@ -89,9 +95,24 @@
     grid-column: 2;
     grid-gap: 19px;
     grid-row: 1/ span 3;
+
+@include laptop {
+      grid-column: initial;
+      grid-row: initial;
+    }
+
+@include small-tablet {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+@include mobile {
+      align-items: center;
+    }
   }
 
   p {
+    max-width: 530px;
     padding-top: 17px;
 
     font-style: normal;
@@ -102,5 +123,9 @@
     color: var(--color-a);
 
     opacity: 0.5;
+
+@include laptop {
+      padding: 0;
+    }
   }
 }

@@ -1,8 +1,7 @@
 .about-tabs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 calc((1520px - 1280px) / 2) 60px;
+  padding-bottom: clamp(53px, 6.751vw, 96px);
 
-  grid-gap: 73px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
 }
