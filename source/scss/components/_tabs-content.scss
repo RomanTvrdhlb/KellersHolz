@@ -26,3 +26,6 @@
   }
 }
 
+.stock-inner {
+  grid-gap: clamp(30px, 5.626vw, 80px);
+}

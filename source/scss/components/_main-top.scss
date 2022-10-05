@@ -77,7 +77,7 @@
 .about-top {
   display: grid;
   align-items: flex-end;
-  padding: 0 calc((1520px - 1280px) / 2) 83px;
+  padding: 0;
 
   grid-gap: 11px clamp(70px, 12.658vw, 180px);
   grid-template-columns: repeat(2, 1fr);

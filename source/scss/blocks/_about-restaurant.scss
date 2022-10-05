@@ -1,0 +1,11 @@
+.about-restaurant {
+  padding: 215px 0 60px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc((1520px - 1280px) / 2);
+
+    grid-gap: 83px;
+  }
+}

@@ -1,4 +1,4 @@
-// import './components/accordions';
+import './components/accordions';
 // import './components/anchor';
 import './components/lift';
 import './components/galery';

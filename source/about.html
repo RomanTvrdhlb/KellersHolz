@@ -5,204 +5,1059 @@
 <body>
 
 
-  @include('partials/header.html')
+  @include('partials/header-opacity.html')
 
-  <main>
-    <div class="main-container main-container--about" style="background-image:url(img/about/back1.png), url(img/about/back2.png) ;">
-      <section class="restaurants-section">
+  <main data-tabs-parrent>
+    <div class="main-container main-container--about" style="background-image:url(img/about/back1.png);">
+      <section class="about-restaurant">
         <div class="container container--mode">
-          <div class="about-top main-top">
-            <div class="main-top__pages">
-              <a href="index.html" class="main-top__link main-top__link--arrow">Главная</a>
-              <a href="restaurants.html" class="main-top__link main-top__link--arrow">Рестораны</a>
-              <a href="about.html" class="main-top__link">Keller Holz Grill & Brew</a>
-            </div>
-            <h2 class="main-top__title">Keller Holz Grill & Brew</h2>
+          <div class="about-restaurant__box">
+            <div class="about-top main-top">
+              <div class="main-top__pages">
+                <a href="index.html" class="main-top__link main-top__link--arrow">Главная</a>
+                <a href="restaurants.html" class="main-top__link main-top__link--arrow">Рестораны</a>
+                <a href="about.html" class="main-top__link">Keller Holz Grill & Brew</a>
+              </div>
+              <h2 class="main-top__title">Keller Holz Grill & Brew</h2>
 
-            <p>Сеть итальянских кафе для друзей Руккола - место, где полнота жизни сочетается с полнотой свежести
-              итальянского меню и ярких эмоций.</p>
-            <div class="about-top__inner">
-              <button class="main-top__btn white-border">Резервация стола</button>
-              <button class="main-top__btn yellow-btn">Заказать доставку</button>
+              <p>Сеть итальянских кафе для друзей Руккола - место, где полнота жизни сочетается с полнотой свежести
+                итальянского меню и ярких эмоций.</p>
+              <div class="about-top__inner">
+                <button class="main-top__btn white-border">Резервация стола</button>
+                <button class="main-top__btn yellow-btn">Заказать доставку</button>
+              </div>
             </div>
+
+            <ul class="tabs-nav">
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn active" type="button" data-tab="1">О ресторане</button>
+              </li>
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn" type="button" data-tab="2">Акции и новости</button>
+              </li>
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn" type="button" data-tab="3">Меню Ресторана</button>
+              </li>
+            </ul>
           </div>
+        </div>
+      </section>
+    </div>
+
+
+    <section class="main-tabs">
+      <div class="container container--mode">
+        <div class="about-tabs">
+
+          <ul class="tabs-content">
+            <li class="tabs-content__item active" style="background-image:url(img/about/back2.png);"
+              data-tab-content="1">
+
+              <div class="tabs-content__inner">
+                <p class="tabs-content__text">
+                  Большой, просторный ресторан с видом на белый дом и с уникальным для москвы рыбным ассортиментом, на
+                  90% выловленным на территории россии (из 25 рек и морей), со смешными по столичным меркам ценами в
+                  меню, с рыбными деликатесами из самых разных мест нашей необъятной родины.
+                  <br><br>
+                  Раздел «крабыракикреветки» – главный козырь меню, здесь два с половиной десятка позиций. И в этом
+                  отношении у «эрвина» просто нет конкурентов в городе. Вот крабы: камчатский, снежный, краб-стригун,
+                  колючий, мягкопанцирный. Вот раки и креветки: рагу из раковых шеек; креветки чилим из холодных вод
+                  северных морей; сладчайшие гребенчатые креветки, которых японцы именуют ботан-эби; похожие на
+                  динозавров в колючем шипастом панцире креветки-медведки. Сдаем лайфхак: начинайте со сравнительной
+                  дегустации.
+                  <br><br>
+                  Здесь есть икорный и устричный бар. Строганина из нельмы и стерляди, оттаивающая во рту натуральным,
+                  откровенным рыбным вкусом. Свежая, не из банки, печень трески, неприлично жирная и нежная.
+                  Легендарная
+                  сосьвинская пряная селедка из поселка березово на сосьве, притоке оби. Сугудай из муксуна –
+                  традиционная российская версия севиче. Байкальский омуль домашнего холодного копчения. Архангельский
+                  клыкач, больше известный в народе как чилийский сибас, в напоминающем о нобу соусе мисо, но с
+                  алтайским медом.
+                </p>
+
+                <div class='tabs-content__box'>
+                  <div class='about-swiper swiper-container'>
+                    <ul class='about-swiper__wrapper swiper-wrapper'>
+                      <li class='about-swiper__slide swiper-slide' data-video>
+                        <div class="slide-main">
+                          <div class="slide-main__img">
+                            <picture>
+                              <source type='image/webp' srcset='img/about/img1.webp'>
+                              <img width='800' height='400' src='img/about/img1.png' alt='image'>
+                            </picture>
+                          </div>
+                          <div class="slide-main__inner">
+                            <h4 class="slide-main__title">Главный зал</h4>
+                            <span class="slide-main__text">Позвольте себе никуда не спешить и распорядиться<br> своим
+                              временем
+                              со вкусом и удовольствием.</span>
+                          </div>
+                          <div class="slide-main__galery" data-video>
+                            <button class="slide-main__btn" data-src="img/about/img1.png"></button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class='about-swiper__slide swiper-slide'>
+                        <div class="slide-main">
+                          <div class="slide-main__img">
+                            <picture>
+                              <source type='image/webp' srcset='img/about/img1.webp'>
+                              <img width='800' height='400' src='img/about/img1.png' alt='image'>
+                            </picture>
+                          </div>
+                          <div class="slide-main__inner">
+                            <h4 class="slide-main__title">Главный зал</h4>
+                            <span class="slide-main__text">Позвольте себе никуда не спешить и распорядиться<br> своим
+                              временем
+                              со вкусом и удовольствием.</span>
+                          </div>
+                          <div class="slide-main__galery" data-video>
+                            <a class="slide-main__btn" data-src="img/about/img1.png">
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class='sub-swiper swiper-container'>
+                    <ul class='sub-swiper__wrapper swiper-wrapper'>
+                      <li class='sub-swiper__slide swiper-slide'>
+                        <div class="sub-swiper__img">
+                          <picture>
+                            <source type='image/webp' srcset='img/about/smallslide1.webp'>
+                            <img width='400' height='200' src='img/about/smallslide1.png' alt='image'>
+                          </picture>
+                        </div>
+                      </li>
+                      <li class='sub-swiper__slide swiper-slide'>
+                        <div class="sub-swiper__img">
+                          <picture>
+                            <source type='image/webp' srcset='img/about/smallslide2.webp'>
+                            <img width='400' height='200' src='img/about/smallslide2.png' alt='image'>
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+
+
+
+                  <button class='about-swiper__btn-next swiper-button-next'></button>
+                  <button class='about-swiper__btn-prev swiper-button-prev'></button>
+                  <span class='about-swiper__pagination swiper-pagination'></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="tabs-content__item" style="background-image:url(img/about/back3.png);" data-tab-content="2">
+
+              <div class="stock-inner tabs-content__inner">
+                <ul class="stock-list restaurants-list">
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab1.webp'>
+                          <img width='364' height='187' src='img/about/tab1.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name">АКЦиЯ</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Вкусные сюрпризы от «Keller Holz Grill & Brew» и Coca-Cola!</h4>
+                      <p>«Keller Holz Grill & Brew» вновь собирает друзей и дарит подарки!
+                      </p>
+                    </a>
+                  </li>
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab2.webp'>
+                          <img width='364' height='187' src='img/about/tab2.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name">АКЦиЯ</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Подарок к пицце от кафе для друзей «Keller Holz Grill & Brew»!</h4>
+
+                    </a>
+                  </li>
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab3.webp'>
+                          <img width='364' height='187' src='img/about/tab3.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name stock-list__name--blue">новости</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Обновленное меню</h4>
+                      <p>Новогоднее меню от «Keller Holz Grill & Brew» вновь собирает друзей и дарит подарки!</p>
+                    </a>
+                  </li>
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab3.webp'>
+                          <img width='364' height='187' src='img/about/tab3.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name stock-list__name--blue">новости</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Условия бонусной программы доставки</h4>
+                      <p>«Keller Holz Grill & Brew» вновь собирает друзей и дарит подарки!
+                      </p>
+                    </a>
+                  </li>
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab2.webp'>
+                          <img width='364' height='187' src='img/about/tab2.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name">АКЦиЯ</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Вкусные сюрпризы от «Keller Holz Grill & Brew» и Coca-Cola!</h4>
+                      <p>«Keller Holz Grill & Brew» вновь собирает друзей и дарит подарки!
+                      </p>
+                    </a>
+                  </li>
+                  <li class="stock-list__item restaurants-item">
+                    <a href="about.html" class="restaurants-item__link">
+                      <div class="restaurants-list__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/about/tab1.webp'>
+                          <img width='364' height='187' src='img/about/tab1.png' alt='image'>
+                        </picture>
+                      </div>
+                      <div class="stock-list__date">
+                        <span class="stock-list__name stock-list__name--blue">новости</span>
+                        <span class="stock-list__value">22 декабря 2020</span>
+                      </div>
+                      <h4 class="stock-list__title">Шеф-повар и ресторана «Keller Holz Grill & Brew» рассказал несколько
+                        секретов кухни</h4>
+                    </a>
+                  </li>
+
+
+                </ul>
+                <div class="stock-navigation">
+                  <a class="stock-navigation__link active" href="#">1</a>
+                  <a class="stock-navigation__link" href="#">2</a>
+                  <a class="stock-navigation__link" href="#">3</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="tabs-content__item" style="background-image:url(img/about/back4.png);" data-tab-content="3">
+
+              <div class="tabs-content__inner">
+
+                <div class='main-accordion' data-single='true' data-breakpoint='576' accordion-init>
+
+                  <ul class="main-accordion__column">
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='1'>
+                        <span class="main-accordion__btn-title">Завтраки</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='1'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='2'>
+                        <span class="main-accordion__btn-title">основные блюда</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='2'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='3'>
+                        <span class="main-accordion__btn-title">Закуски</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='3'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='4'>
+                        <span class="main-accordion__btn-title">первые блюда</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='4'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <ul class="main-accordion__column">
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='5'>
+                        <span class="main-accordion__btn-title">салаты</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='5'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='6'>
+                        <span class="main-accordion__btn-title">десерты</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='6'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class='main-accordion__item'>
+                      <button class='main-accordion__btn' data-id='7'>
+                        <span class="main-accordion__btn-title">первые блюда</span>
+                        <span class="main-accordion__btn-icon">
+                          <svg width="14" height="8">
+                            <use href='img/sprite/sprite.svg#arrow-top'></use>
+                          </svg>
+                        </span>
+                      </button>
+                      <div class='main-accordion__content' data-content='7'>
+                        <ul class="accordion-list">
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                          <li class="accordion-list__item">
+                            <span class="accordion-list__choice">
+                              <span class="accordion-list__name">Яичница из двух яиц</span>
+                              <span class="accordion-list__value">/ 180 гр.</span>
+                            </span>
+                            <span class="accordion-list__weight">35 MDL</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
         </div>
       </div>
     </section>
 
-  <section>
-      <div class="about-tabs" data-tabs-parrent>
-        <ul class="tabs-nav">
-          <li class="tabs-nav__item">
-            <button class="tabs-nav__btn active" type="button" data-tab="1">О ресторане</button>
-          </li>
-          <li class="tabs-nav__item">
-            <button class="tabs-nav__btn" type="button" data-tab="2">Акции и новости</button>
-          </li>
-          <li class="tabs-nav__item">
-            <button class="tabs-nav__btn" type="button" data-tab="3">Меню Ресторана</button>
-          </li>
-        </ul>
-        <ul class="tabs-content">
-          <li class="tabs-content__item active" data-tab-content="1">
-
-            <div class="tabs-content__inner">
-              <p class="tabs-content__text">
-                Большой, просторный ресторан с видом на белый дом и с уникальным для москвы рыбным ассортиментом, на
-                90% выловленным на территории россии (из 25 рек и морей), со смешными по столичным меркам ценами в
-                меню, с рыбными деликатесами из самых разных мест нашей необъятной родины.
-                <br><br>
-                Раздел «крабыракикреветки» – главный козырь меню, здесь два с половиной десятка позиций. И в этом
-                отношении у «эрвина» просто нет конкурентов в городе. Вот крабы: камчатский, снежный, краб-стригун,
-                колючий, мягкопанцирный. Вот раки и креветки: рагу из раковых шеек; креветки чилим из холодных вод
-                северных морей; сладчайшие гребенчатые креветки, которых японцы именуют ботан-эби; похожие на
-                динозавров в колючем шипастом панцире креветки-медведки. Сдаем лайфхак: начинайте со сравнительной
-                дегустации.
-                <br><br>
-                Здесь есть икорный и устричный бар. Строганина из нельмы и стерляди, оттаивающая во рту натуральным,
-                откровенным рыбным вкусом. Свежая, не из банки, печень трески, неприлично жирная и нежная.
-                Легендарная
-                сосьвинская пряная селедка из поселка березово на сосьве, притоке оби. Сугудай из муксуна –
-                традиционная российская версия севиче. Байкальский омуль домашнего холодного копчения. Архангельский
-                клыкач, больше известный в народе как чилийский сибас, в напоминающем о нобу соусе мисо, но с
-                алтайским медом.
-              </p>
-
-              <div class='tabs-content__box'>
-                <div class='about-swiper swiper-container'>
-                  <ul class='about-swiper__wrapper swiper-wrapper'>
-                    <li class='about-swiper__slide swiper-slide' data-video>
-                      <div class="slide-main">
-                        <div class="slide-main__img">
-                          <picture>
-                            <source type='image/webp' srcset='img/about/img1.webp'>
-                            <img width='800' height='400' src='img/about/img1.png' alt='image'>
-                          </picture>
-                        </div>
-                        <div class="slide-main__inner">
-                          <h4 class="slide-main__title">Главный зал</h4>
-                          <span class="slide-main__text">Позвольте себе никуда не спешить и распорядиться<br> своим
-                            временем
-                            со вкусом и удовольствием.</span>
-                        </div>
-                        <div class="slide-main__galery" data-video>
-                          <button class="slide-main__btn" data-src="img/about/img1.png"></button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class='about-swiper__slide swiper-slide'>
-                      <div class="slide-main">
-                        <div class="slide-main__img">
-                          <picture>
-                            <source type='image/webp' srcset='img/about/img1.webp'>
-                            <img width='800' height='400' src='img/about/img1.png' alt='image'>
-                          </picture>
-                        </div>
-                        <div class="slide-main__inner">
-                          <h4 class="slide-main__title">Главный зал</h4>
-                          <span class="slide-main__text">Позвольте себе никуда не спешить и распорядиться<br> своим
-                            временем
-                            со вкусом и удовольствием.</span>
-                        </div>
-                        <div class="slide-main__galery" data-video>
-                          <a class="slide-main__btn" data-src="img/about/img1.png">
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-
-                </div>
-
-                <div class='sub-swiper swiper-container'>
-                  <ul class='sub-swiper__wrapper swiper-wrapper'>
-                    <li class='sub-swiper__slide swiper-slide'>
-                      <div class="sub-swiper__img">
-                        <picture>
-                          <source type='image/webp' srcset='img/about/smallslide1.webp'>
-                          <img width='400' height='200' src='img/about/smallslide1.png' alt='image'>
-                        </picture>
-                      </div>
-                    </li>
-                    <li class='sub-swiper__slide swiper-slide'>
-                      <div class="sub-swiper__img">
-                        <picture>
-                          <source type='image/webp' srcset='img/about/smallslide2.webp'>
-                          <img width='400' height='200' src='img/about/smallslide2.png' alt='image'>
-                        </picture>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-
-
-
-                <button class='about-swiper__btn-next swiper-button-next'></button>
-                <button class='about-swiper__btn-prev swiper-button-prev'></button>
-                <span class='about-swiper__pagination swiper-pagination'></span>
-              </div>
-            </div>
-          </li>
-
-          <li class="tabs-content__item" data-tab-content="2">
-
-            <div class="tabs-content__inner">
-              <p class="tabs-content__text">
-                Большой, просторный ресторан с видом на белый дом и с уникальным для москвы рыбным ассортиментом, на
-                90% выловленным на территории россии (из 25 рек и морей), со смешными по столичным меркам ценами в
-                меню, с рыбными деликатесами из самых разных мест нашей необъятной родины.
-                <br><br>
-                Раздел «крабыракикреветки» – главный козырь меню, здесь два с половиной десятка позиций. И в этом
-                отношении у «эрвина» просто нет конкурентов в городе. Вот крабы: камчатский, снежный, краб-стригун,
-                колючий, мягкопанцирный. Вот раки и креветки: рагу из раковых шеек; креветки чилим из холодных вод
-                северных морей; сладчайшие гребенчатые креветки, которых японцы именуют ботан-эби; похожие на
-                динозавров в колючем шипастом панцире креветки-медведки. Сдаем лайфхак: начинайте со сравнительной
-                дегустации.
-                <br><br>
-                Здесь есть икорный и устричный бар. Строганина из нельмы и стерляди, оттаивающая во рту натуральным,
-                откровенным рыбным вкусом. Свежая, не из банки, печень трески, неприлично жирная и нежная.
-                Легендарная
-                сосьвинская пряная селедка из поселка березово на сосьве, притоке оби. Сугудай из муксуна –
-                традиционная российская версия севиче. Байкальский омуль домашнего холодного копчения. Архангельский
-                клыкач, больше известный в народе как чилийский сибас, в напоминающем о нобу соусе мисо, но с
-                алтайским медом.
-              </p>
-
-            </div>
-          </li>
-
-          <li class="tabs-content__item" data-tab-content="3">
-
-            <div class="tabs-content__inner">
-              <p class="tabs-content__text">
-                Большой, просторный ресторан с видом на белый дом и с уникальным для москвы рыбным ассортиментом, на
-                90% выловленным на территории россии (из 25 рек и морей), со смешными по столичным меркам ценами в
-                меню, с рыбными деликатесами из самых разных мест нашей необъятной родины.
-                <br><br>
-                Раздел «крабыракикреветки» – главный козырь меню, здесь два с половиной десятка позиций. И в этом
-                отношении у «эрвина» просто нет конкурентов в городе. Вот крабы: камчатский, снежный, краб-стригун,
-                колючий, мягкопанцирный. Вот раки и креветки: рагу из раковых шеек; креветки чилим из холодных вод
-                северных морей; сладчайшие гребенчатые креветки, которых японцы именуют ботан-эби; похожие на
-                динозавров в колючем шипастом панцире креветки-медведки. Сдаем лайфхак: начинайте со сравнительной
-                дегустации.
-                <br><br>
-                Здесь есть икорный и устричный бар. Строганина из нельмы и стерляди, оттаивающая во рту натуральным,
-                откровенным рыбным вкусом. Свежая, не из банки, печень трески, неприлично жирная и нежная.
-                Легендарная
-                сосьвинская пряная селедка из поселка березово на сосьве, притоке оби. Сугудай из муксуна –
-                традиционная российская версия севиче. Байкальский омуль домашнего холодного копчения. Архангельский
-                клыкач, больше известный в народе как чилийский сибас, в напоминающем о нобу соусе мисо, но с
-                алтайским медом.
-              </p>
-
-
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  
 
   </main>
 

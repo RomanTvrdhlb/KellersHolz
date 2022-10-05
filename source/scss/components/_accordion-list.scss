@@ -1,0 +1,39 @@
+.accordion-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__choice {
+    display: flex;
+    align-items: center;
+
+    grid-gap: 10px;
+  }
+  &__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+
+  &__value {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--font-family1);
+    color: var(--color-f);
+  }
+  &__weight {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+}

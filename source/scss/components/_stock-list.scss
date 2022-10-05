@@ -1,0 +1,42 @@
+.stock-list {
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: var(--font-family);
+    color: var(--color-i);
+    text-transform: uppercase;
+
+
+    &--blue {
+      color: var(--color-k);
+    }
+  }
+
+  &__value {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: var(--font-family);
+    text-align: right;
+    color: var(--color-h);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    font-family: var(--font-family1);
+    color: var(--color-a);
+  }
+}
