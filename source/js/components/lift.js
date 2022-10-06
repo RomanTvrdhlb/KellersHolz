@@ -9,7 +9,7 @@ import { addCustomClass,removeCustomClass } from "../functions/customFunctions";
     
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-    console.log('lift');
+  
     if (scrolled > 500) {
       addCustomClass(lift, "show");
     } else {

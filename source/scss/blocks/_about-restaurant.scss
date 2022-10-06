@@ -4,7 +4,6 @@
   &__box {
     display: flex;
     flex-direction: column;
-    padding: 0 calc((1520px - 1280px) / 2);
 
     grid-gap: clamp(30px, 5.837vw, 83px);
 

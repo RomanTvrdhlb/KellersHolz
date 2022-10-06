@@ -4,4 +4,13 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 55% 70%;
+
+@include laptop {
+    background-size: auto;
+  }
+
+@include small-tablet {
+    background-position: right, 40%;
+    background-size: 70%;
+  }
 }

@@ -4,4 +4,9 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto;
+
+@include small-tablet {
+    background-position: top center;
+    background-size: 50%;
+  }
 }

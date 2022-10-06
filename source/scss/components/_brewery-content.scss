@@ -1,0 +1,34 @@
+.brewery-content {
+  padding: clamp(10px, 1.688vw, 24px) 0 clamp(60px, 8.439vw, 120px);
+
+  &__inner {
+    display: flex;
+    padding-bottom: clamp(25px, 3.516vw, 50px);
+
+    grid-gap: clamp(25px, 3.165vw, 45px);
+
+@include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    max-width: 553px;
+    padding-top: 10px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(14px, 1.055vw, 15px);
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+
+  &__img {
+    img,
+    picture {
+      border-radius: 7px;
+    }
+  }
+}

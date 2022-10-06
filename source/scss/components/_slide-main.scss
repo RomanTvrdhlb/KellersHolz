@@ -3,6 +3,8 @@
 
   max-width: 800px;
   min-height: 400px;
+
+  pointer-events: none;
   &__galery {
     position: absolute;
     top: 0;
@@ -25,6 +27,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 15px 15px;
+
+    pointer-events: initial;
   }
   &__inner {
     position: absolute;
@@ -48,6 +52,8 @@
     }
   }
   &__title {
+    padding-bottom: 10px;
+
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
@@ -66,12 +72,13 @@
   }
 }
 
+
 .about-swiper__btn {
   &-next {
     position: absolute;
-    top: 50%;
-    left: 68%;
-    z-index: 80;
+    bottom: 0;
+    left: 80px;
+    z-index: 30;
 
     width: 86px;
     height: 34px;
@@ -80,18 +87,20 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    transform: translate(-68%, -50%);
 
-@include laptop {
-      display: none;
+@include for-big-desktop {
+      top: calc(50% - 64px);
+      left: 810px;
+
+      transform: translateY(50%);
     }
   }
 
   &-prev {
     position: absolute;
-    top: 50%;
-    left: -8%;
-    z-index: 80;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
 
     width: 86px;
     height: 34px;
@@ -100,11 +109,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    transform: translate(8%, -50%);
-    opacity: 0.3;
+    opacity: 0.7;
 
-@include laptop {
-      display: none;
+@include for-big-desktop {
+      top: calc(50% - 64px);
+      left: -7%;
+
+      transform: translateY(50%);
+      opacity: 0.3;
     }
   }
 }

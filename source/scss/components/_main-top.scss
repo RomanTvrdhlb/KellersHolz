@@ -66,7 +66,30 @@
     }
   }
 }
+.brewery-top {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
 
+  grid-gap: 11px;
+
+  &__title {
+    font-size: clamp(18px, 3.376vw, 48px);
+  }
+
+  p {
+    max-width: 526px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    opacity: 0.8;
+  }
+}
 .restaurants-top {
   flex-direction: column;
   align-items: flex-start;

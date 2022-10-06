@@ -1,7 +1,5 @@
 .tabs-content {
-  padding: 0 calc((1520px - 1280px) / 2);
-
-@include tablet {
+  @include tablet {
     padding: 0 10px;
   }
 

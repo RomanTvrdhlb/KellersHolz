@@ -4,4 +4,13 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 95% 70%;
+
+@include tablet {
+    background-position: center right;
+    background-size: 60%;
+  }
+
+@include small-tablet {
+    background-size: 80%;
+  }
 }

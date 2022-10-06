@@ -25,4 +25,22 @@
     background-position: center center;
     background-size: 100% 100%;
   }
+
+  &--brewery {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    img,
+    picture {
+      filter: blur(1px);
+    }
+  }
+
+  &--restaurants {
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+  }
 }

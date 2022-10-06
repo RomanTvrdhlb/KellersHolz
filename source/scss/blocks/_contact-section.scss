@@ -1,8 +1,10 @@
 .contact-section {
   background-color: var(--bg-b);
-
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
   &__box {
-    padding: 60px calc((1520px - 1280px) / 2);
+    padding: 60px 0;
 
 @include tablet {
       padding: 60px 10px;

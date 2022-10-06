@@ -4,12 +4,16 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 800px;
+  padding-bottom: 64px;
 
 
   &__pagination {
     position: absolute;
-    bottom: -10%;
-    left: 67%;
+    bottom: 0;
+
+    display: flex;
+    justify-content: end;
+    width: 100%;
 
     font-style: normal;
     font-weight: 700;
@@ -18,16 +22,8 @@
     font-family: var(--font-family1);
     color: var(--color-j);
 
-    transform: translate(-75%, 10%);
-
-@include tablet {
-      left: 90%;
-
-      transform: translate(-78%, 10%);
-    }
-
 @include small-tablet {
-      display: none;
+      justify-content: center;
     }
 
     .swiper-pagination-current {

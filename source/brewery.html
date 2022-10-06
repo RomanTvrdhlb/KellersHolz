@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header-opacity.html')
+
+  <main>
+    <div class="main-container--brewery main-container" style="background-image:url(img/brewery/back1.png);">
+      <section class="brewery-first">
+        <div class="container container--mini">
+          <div class="brewery-top main-top">
+            <div class="main-top__pages">
+              <a href="index.html" class="main-top__link main-top__link--arrow">Главная</a>
+              <a href="restaurants.html" class="main-top__link">Рестораны</a>
+            </div>
+            <h2 class="main-top__title">Пивоварня</h2>
+            <p>Используя вековой опыт пивоварения и самое технологичное оборудование, мы производим пиво высочайшего качества.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="brewery-second" style="background-image:url(img/brewery/back2.png);">
+      <div class="container container--mini">
+        <div class="brewery-content">
+          <div class="brewery-content__inner">
+            <p class="brewery-content__text">
+              Kellers - это крафтовое пиво, сваренное небольшими партиями по классической немецкой технологии. Пиво варится в одноименной частной пивоварне, расположенной вдали от города, в живописном и экологически чистом месте с. Будешть.  Используя вековой опыт пивоварения и самое технологичное оборудование, мы производим пиво высочайшего качества. Сваренное с любовью и заботой из немецкого солода и хмеля, пиво Kellers пользуется заслуженным уважением наших потребителей. 
+              <br><br>
+              Благодаря идеальным условиями хранения, фирменные магазины пивоварни «Kellers Beer Boutique» предлагают нашим покупателям только свежее и только качественное пиво. В нашем ассортименте большой выбор закусок к любимому напитку, а настоящий хлебный квас натурального брожения не оставит равнодушным никого.
+            </p>
+            <div class="brewery-content__img">
+              <picture>
+                <source type='image/webp' srcset='img/brewery/img1.webp'>
+                <img width='680' height='376' src='img/brewery/img1.png' alt='image'>
+              </picture>
+            </div>
+
+
+          </div>
+
+          <ul class="brewery-list">
+            <li class="brewery-list__item">
+              <h6 class="brewery-list__name">лет опыта в<br> производстве</h6>
+              <span class="brewery-list__value">20</span>
+            </li>
+            <li class="brewery-list__item">
+              <h6 class="brewery-list__name">вкусов и стилей<br> 
+                разработанно</h6>
+              <span class="brewery-list__value">15</span>
+            </li>
+            <li class="brewery-list__item">
+              <h6 class="brewery-list__name">бутиков<br> 
+                по всей стране</h6>
+              <span class="brewery-list__value">48</span>
+            </li>
+          </ul>
+
+          <div class='tabs-content__box'>
+            <div class='about-swiper swiper-container'>
+              
+              <ul class='about-swiper__wrapper swiper-wrapper'>
+                <li class='about-swiper__slide swiper-slide' data-video>
+                  <div class="slide-main">
+                    <div class="slide-main__img">
+                      <picture>
+                        <source type='image/webp' srcset='img/brewery/slide1.webp'>
+                        <img width='800' height='400' src='img/brewery/slide1.png' alt='image'>
+                      </picture>
+                    </div>
+                    <div class="slide-main__inner">
+                      <h4 class="slide-main__title">Немецкое качество</h4>
+                      <span class="slide-main__text">
+                        Пиво производится в соответствии с немецким законом Reinheitsgebot 1516 года, в котором<br> говорится, что оно может быть изготовлено с использованием только четырех ингредиентов:<br> воды, солода, хмеля и пивных дрожжей.</span>
+                    </div>
+                    <div class="slide-main__galery" data-video>
+                      <button class="slide-main__btn" data-src="img/about/img1.png"></button>
+                    </div>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="slide-main">
+                    <div class="slide-main__img">
+                      <picture>
+                        <source type='image/webp' srcset='img/brewery/slide2.webp'>
+                        <img width='800' height='400' src='img/brewery/slide2.png' alt='image'>
+                      </picture>
+                    </div>
+                    <div class="slide-main__inner">
+                      <h4 class="slide-main__title">Немецкое качество</h4>
+                      <span class="brewery-main__text slide-main__text">Пиво производится в соответствии с немецким законом Reinheitsgebot 1516 года, в котором<br> говорится, что оно может быть изготовлено с использованием только четырех ингредиентов:<br> воды, солода, хмеля и пивных дрожжей.</span>
+                    </div>
+                    <div class="slide-main__galery" data-video>
+                      <a class="slide-main__btn" data-src="img/about/img1.png">
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             
+              <span class='about-swiper__pagination swiper-pagination'></span>
+            </div>
+
+            <div class='sub-swiper swiper-container'>
+              <ul class='sub-swiper__wrapper swiper-wrapper'>
+                <li class='sub-swiper__slide swiper-slide'>
+                  <div class="sub-swiper__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/brewery/slide2.webp'>
+                      <img width='400' height='200' src='img/brewery/slide2.png' alt='image'>
+                    </picture>
+                  </div>
+                </li>
+                <li class='sub-swiper__slide swiper-slide'>
+                  <div class="sub-swiper__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/brewery/slide3.webp'>
+                      <img width='400' height='200' src='img/brewery/slide3.png' alt='image'>
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button class='about-swiper__btn-next swiper-button-next'></button>
+            <button class='about-swiper__btn-prev swiper-button-prev'></button>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="contact-section" style="background-image:url(img/brewery/back3.png);" >
+      <div class="container container--mini">
+        <div class="contact-section__box">
+          <div class="contact-main">
+            <h5 class="contact-main__title">Контакты</h5>
+            <ul class="contact-main__list">
+              <li class="contact-main__item">
+                <div class="contact-main__inner">
+                  <span class="contact-main__name">Aдрес:</span>
+                  <span class="contact-main__value">с.Будешть, ул. Транян, 1/2
+                  </span>
+                </div>
+                <div class="contact-main__inner">
+                  <span class="contact-main__name">Администрация:</span>
+                  <a class="contact-main__link" href="tel:+37368550200">+(373) 68 550 200</a>
+                </div>
+              </li>
+              <li class="contact-main__item">
+                <div class="contact-main__inner">
+                  <span class="contact-main__name">Время работы:</span>
+                  <span class="contact-main__value">08.00 - 19.00</span>
+                </div>
+                <div class="contact-main__inner">
+                  <span class="contact-main__name">Call-Center:</span>
+                  <div class="contact-main__phone">
+                    <a class="contact-main__link" href="tel:+37360760760">+(373) 60 760 760</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="maps-section">
+      <div class="maps-section__box">
+        <div class="maps-section__img">
+          <picture>
+            <source type='image/webp' srcset='img/brewery/map.webp'>
+            <img width='1600' height='451' src='img/brewery/map.png' alt='map'>
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer-black.html')
+
+
+  @include('partials/overlay.html')
+
+  <button class="lift" data-lift>
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
