@@ -23,6 +23,8 @@
     color: var(--color-j);
 
 @include small-tablet {
+      bottom: 2px;
+
       justify-content: center;
     }
 
