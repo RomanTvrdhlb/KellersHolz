@@ -1,0 +1,46 @@
+.information-top {
+  position: relative;
+
+  display: flex;
+  max-width: 581px;
+  max-height: 65px;
+
+  grid-column: span 2;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 191px;
+    height: 2px;
+
+    background-color: var(--bg-a);
+    transform: translateY(-50%);
+  }
+
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    font-family: var(--font-family1);
+    text-align: center;
+    color: var(--color-a);
+  }
+  &__name {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 119px;
+    font-family: var(--font-family2);
+    color: var(--color-e);
+
+    transform: translateY(-83%);
+  }
+}

@@ -1,0 +1,16 @@
+.assortment-catalog {
+  position: relative;
+
+  padding-bottom: clamp(100px, 13.08vw, 186px);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background-color: var(--bg-b);
+  }
+}

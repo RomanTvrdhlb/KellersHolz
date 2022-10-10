@@ -26,6 +26,11 @@
     background-size: 100% 100%;
   }
 
+  &--assortment {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
   &--brewery {
     background-repeat: no-repeat;
     background-position: center center;

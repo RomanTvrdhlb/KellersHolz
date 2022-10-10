@@ -6,11 +6,6 @@
   width: 100%;
   min-height: 430px;
 
-  // background-image: url(/img/index/img1.png);
-  // background-repeat: no-repeat;
-  // background-position: 50% 100%;
-  // background-size: cover;
-
   &__img {
     position: absolute;
     top: 0;
@@ -70,7 +65,7 @@
   }
   &__signature {
     position: absolute;
-    top: 55;
+    top: 50%;
     left: 0;
 
     font-style: normal;
@@ -81,7 +76,7 @@
     color: var(--color-e);
     letter-spacing: 0.04em;
 
-    transform: translateY(-55%);
+    transform: translateY(-70%);
   }
 
   &__about {

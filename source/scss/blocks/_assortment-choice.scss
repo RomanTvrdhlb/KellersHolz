@@ -1,0 +1,9 @@
+.assortment-choice {
+  margin-bottom: clamp(40px, 4.923vw, 70px);
+
+  background-color: var(--bg-o);
+
+  &__box {
+    padding: 26px 0 23px;
+  }
+}

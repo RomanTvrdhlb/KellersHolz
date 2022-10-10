@@ -7,6 +7,6 @@ import './components/sliders';
 // import './components/replaceEL';
 import './components/getDinamicHeight';
 // import './components/lightbox';
-// // import './components/select';
+import './components/select';
 import './components/tabs';
 

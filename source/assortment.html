@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header-opacity.html')
+
+  <main>
+    <div class="main-container--assortment main-container" style="background-image:url(img/assortment/back1.png);">
+
+      <section class="assortment-first">
+        <div class="container container--mini">
+          <div class="assortment-top main-top">
+            <div class="main-top__pages">
+              <a href="index.html" class="main-top__link main-top__link--arrow">Главная</a>
+              <a href="assortment.html" class="main-top__link">Наше пиво</a>
+            </div>
+            <h2 class="main-top__title">Наше пиво</h2>
+            <p>Используя вековой опыт пивоварения и самое технологичное оборудование, мы производим пиво высочайшего
+              качества.</p>
+
+            <div class="assortment-top__inner">
+              <a href="#" class="main-top__more">о нас
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </a>
+              <a href="#" class="main-top__more">о ресторане
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </a>
+              <button class="main-top__btn yellow-btn">Заказать доставку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="assortment-choice">
+        <div class="container container--mini">
+          <div class="assortment-choice__box">
+            <div class="assortment-select">
+
+              <ul class="assortment-select__list">
+                <li class="assortment-select__item">
+                  <span class="assortment-select__name">Категория:</span>
+                  <div class='select'>
+                    <div class='select__header'>
+                      <span class='select__current'>Все</span>
+                      <div class='select__icon'>
+                        <svg width="14" height="10">
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='select__body'>
+                      <ul class='select__wrapp'>
+                        <li class='select__item' data-choice='choosen'>Пшеничное</li>
+                        <li class='select__item' data-choice='choosen'>Белое</li>
+                        <li class='select__item' data-choice='choosen'>Янтарное</li>
+                        <li class='select__item' data-choice='choosen'>Черное</li>
+                        <li class='select__item' data-choice='choosen'>Темное</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="assortment-select__item">
+                  <span class="assortment-select__name">Стиль:</span>
+                  <div class='select'>
+                    <div class='select__header'>
+                      <span class='select__current'>DUNKEL BIER</span>
+                      <div class='select__icon'>
+                        <svg width="14" height="10">
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='select__body'>
+                      <ul class='select__wrapp'>
+                        <li class='select__item' data-choice='choosen'>DUNKEL BIER</li>
+                        <li class='select__item' data-choice='choosen'>DUNKEL BIER</li>
+                        <li class='select__item' data-choice='choosen'>DUNKEL BIER</li>
+                        <li class='select__item' data-choice='choosen'>DUNKEL BIER</li>
+                        <li class='select__item' data-choice='choosen'>DUNKEL BIER</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="assortment-select__item">
+                  <span class="assortment-select__name">Вид:</span>
+                  <div class='select'>
+                    <div class='select__header'>
+                      <span class='select__current'>Светлое</span>
+                      <div class='select__icon'>
+                        <svg width="14" height="10">
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='select__body'>
+                      <ul class='select__wrapp'>
+                        <li class='select__item' data-choice='choosen'>Пшеничное</li>
+                        <li class='select__item' data-choice='choosen'>Белое</li>
+                        <li class='select__item' data-choice='choosen'>Янтарное</li>
+                        <li class='select__item' data-choice='choosen'>Черное</li>
+                        <li class='select__item' data-choice='choosen'>Темное</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+    </div>
+
+
+    <section class="assortment-catalog">
+      <div class="container container--mini">
+        <div class="assortment-catalog__box">
+          <ul class="assortment-list">
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img1.webp'>
+                  <img width='220' height='220' src='img/assortment/img1.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Airy Pilsner» светлое 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img2.webp'>
+                  <img width='220' height='220' src='img/assortment/img2.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Lager Hell» темное 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img1.webp'>
+                  <img width='220' height='220' src='img/assortment/img1.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Airy Pilsner» светлое 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img3.webp'>
+                  <img width='220' height='220' src='img/assortment/img3.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Vienna Lager» светлое 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img1.webp'>
+                  <img width='220' height='220' src='img/assortment/img1.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Weissbier» светлое 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img2.webp'>
+                  <img width='220' height='220' src='img/assortment/img2.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Пиво «Vienna Lager» светлое 1 л</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+            <li class="assortment-list__item">
+              <div class="assortment-list__img">
+                <picture>
+                  <source type='image/webp' srcset='img/assortment/img4.webp'>
+                  <img width='220' height='220' src='img/assortment/img4.png' alt='image'>
+                </picture>
+              </div>
+              <h6 class="assortment-list__title">Термокег «Airy Pilsner» светлое</h6>
+              <span class="assortment-list__name">фильтрованное 3,6°</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+
+  @include('partials/overlay.html')
+
+  <button class="lift" data-lift>
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

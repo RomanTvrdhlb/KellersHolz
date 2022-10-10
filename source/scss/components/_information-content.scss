@@ -1,0 +1,43 @@
+.information-content {
+  &__inner {
+    display: grid;
+
+    grid-gap: 26px clamp(40px, 5.626vw, 80px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+
+  &__img {
+    position: relative;
+
+    width: 100%;
+    img,
+    picture {
+      display: block;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 30%;
+
+      width: 396px;
+      height: 418px;
+
+      background-image: url(/img/information/img2.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+}
