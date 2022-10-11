@@ -6,6 +6,8 @@
   min-height: 730px;
   padding-bottom: clamp(50px, 6.681vw, 95px);
 
+  grid-gap: 15px;
+
 @include small-tablet {
     flex-direction: column;
   }
@@ -55,5 +57,13 @@
     font-family: var(--font-family);
     text-align: right;
     color: var(--color-a);
+  }
+}
+
+.information-list {
+  min-height: 256px;
+  padding-bottom: clamp(80px, 13.361vw, 190px);
+  &__item {
+    justify-content: center;
   }
 }
