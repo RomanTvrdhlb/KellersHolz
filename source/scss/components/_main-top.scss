@@ -120,6 +120,28 @@
     opacity: 0.8;
   }
 }
+
+.contact-top {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 calc((1422px - 1282px) / 2) clamp(35px, 4.219vw, 60px);
+
+  grid-gap: 11px;
+
+@include mobile {
+    padding-bottom: 49px;
+  }
+
+  &__title {
+    font-size: clamp(18px, 3.376vw, 48px);
+  }
+
+  &--second {
+    padding: 0 0 20px;
+
+    border-bottom: 1px solid var(--border-a);
+  }
+}
 .restaurants-top {
   flex-direction: column;
   align-items: flex-start;
@@ -162,6 +184,8 @@
     }
   }
 }
+
+
 .about-top {
   display: grid;
   align-items: flex-end;

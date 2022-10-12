@@ -1,0 +1,133 @@
+.contact-acc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 701px;
+
+  grid-gap: 40px;
+
+@include mobile {
+    grid-gap: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__list {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 calc((1422px - 1282px) / 2);
+
+      grid-gap: 20px;
+      &:hover {
+        background-color: var(--bg-a);
+        cursor: url(../../img/cur.png), auto !important;
+
+        .contact-acc__subtitle {
+          color: var(--color-b);
+        }
+
+        .contact-acc__adress {
+          color: var(--color-b);
+        }
+      }
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    padding: clamp(25px, 2.11vw, 30px) 0;
+
+    border-bottom: 1px solid var(--border-a);
+  }
+
+  &__btn {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 calc((1422px - 1282px) / 2) clamp(20px, 2.11vw, 30px);
+
+    svg {
+      transition: all 0.4s;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 80%;
+      height: 1px;
+
+      background-color: var(--border-a);
+      transform: translateX(-50%);
+    }
+
+    &.active {
+      svg {
+        transform: scale(-1);
+      }
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    justify-content: space-between;
+
+    grid-gap: 85;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+
+      grid-gap: 6px;
+    }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(30px, 2.954vw, 42px);
+    line-height: 115%;
+    font-family: var(--font-family1);
+    color: var(--color-a);
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(18px, 1.547vw, 22px);
+    line-height: 120%;
+    font-family: var(--font-family1);
+    color: var(--color-a);
+
+    transition: all 0.5s;
+  }
+
+  &__name {
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(14px, 1.055vw, 15px);
+    line-height: 120%;
+    font-family: var(--font-family1);
+    color: var(--color-f);
+  }
+
+  &__adress {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 1.266vw, 18px);
+    line-height: 140%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    transition: all 0.5s;
+  }
+}

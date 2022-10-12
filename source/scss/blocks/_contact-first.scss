@@ -1,0 +1,9 @@
+.contact-first {
+  padding: clamp(44px, 4.219vw, 60px) 0 clamp(70px, 6.329vw, 90px);
+
+  &__box {
+    display: flex;
+
+    grid-gap: 20px;
+  }
+}

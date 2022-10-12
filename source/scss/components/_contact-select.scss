@@ -1,0 +1,47 @@
+.contact-select {
+  position: relative;
+
+  width: fit-content;
+  min-width: 20px;
+
+  &__icon {
+    transform: scaleY(1);
+  }
+
+  &__body {
+    position: absolute;
+    top: 100%;
+    bottom: initial;
+    left: initial;
+
+    min-width: 190px;
+  }
+
+  &__header {
+    justify-content: flex-end;
+    min-width: 0;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__wrapp {
+    background-color: var(--bg-i);
+  }
+
+  &__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+}
+
+
+.select.active {
+  .contact-select__icon {
+    transform: scaleY(-1);
+  }
+}
