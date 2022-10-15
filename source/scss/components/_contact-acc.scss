@@ -6,6 +6,10 @@
 
   grid-gap: 40px;
 
+@include tablet {
+    max-width: 100%;
+  }
+
 @include mobile {
     grid-gap: 50px;
   }
@@ -23,6 +27,11 @@
       padding: 0 calc((1422px - 1282px) / 2);
 
       grid-gap: 20px;
+
+@include small-tablet {
+        padding: 0 10px;
+      }
+
       &:hover {
         background-color: var(--bg-a);
         cursor: url(../../img/cur.png), auto !important;
@@ -54,6 +63,10 @@
     width: 100%;
     padding: 0 calc((1422px - 1282px) / 2) clamp(20px, 2.11vw, 30px);
 
+@include small-tablet {
+      padding: 0 10px clamp(20px, 2.11vw, 30px);
+    }
+
     svg {
       transition: all 0.4s;
     }
@@ -69,6 +82,18 @@
 
       background-color: var(--border-a);
       transform: translateX(-50%);
+
+@include tablet {
+        width: 86%;
+      }
+
+@include small-tablet {
+        width: 98%;
+      }
+
+@include mobile {
+        width: 97%;
+      }
     }
 
     &.active {
@@ -82,7 +107,11 @@
     display: flex;
     justify-content: space-between;
 
-    grid-gap: 85;
+    grid-gap: clamp(10px, 1.406vw, 20px);
+
+@include mobile {
+      flex-direction: column;
+    }
 
     &-item {
       display: flex;
@@ -94,7 +123,7 @@
   &__title {
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(30px, 2.954vw, 42px);
+    font-size: clamp(22px, 2.954vw, 42px);
     line-height: 115%;
     font-family: var(--font-family1);
     color: var(--color-a);

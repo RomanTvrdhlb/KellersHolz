@@ -24,7 +24,7 @@
   &__title {
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(16px, 2.954vw, 42px);
+    font-size: clamp(22px, 2.954vw, 42px);
     line-height: 115%;
     font-family: var(--font-family1);
     color: var(--color-a);
@@ -127,6 +127,10 @@
   padding: 0 calc((1422px - 1282px) / 2) clamp(35px, 4.219vw, 60px);
 
   grid-gap: 11px;
+
+@include small-tablet {
+    padding: 0 10px clamp(35px, 4.219vw, 60px);
+  }
 
 @include mobile {
     padding-bottom: 49px;

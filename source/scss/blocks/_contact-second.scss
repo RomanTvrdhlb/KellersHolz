@@ -14,6 +14,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: clamp(30px, 4.29vw, 61px);
+
+    grid-gap: clamp(44px, 7.032vw, 100px);
+
+@include mobile {
+      flex-direction: column;
+    }
   }
 
   &::after {
