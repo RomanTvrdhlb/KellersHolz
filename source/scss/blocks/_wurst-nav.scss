@@ -1,0 +1,70 @@
+.wurst-nav {
+  margin-bottom: clamp(20px, 2.954vw, 42px);
+
+  background-color: var(--bg-b);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+
+    grid-gap: clamp(22px, 3.094vw, 44px);
+  }
+
+  &__link {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 1.195vw, 17px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    transition: all 0.4s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -100%;
+
+      width: 0;
+      height: 5px;
+
+      background-color: var(--bg-f);
+      border-radius: 5px;
+      transform: translateY(120%);
+
+      transition: all 0.4s ease-out;
+    }
+    &--active {
+      color: var(--color-g);
+      &::before {
+        right: auto;
+        left: 0;
+
+        width: 100%;
+      }
+      &:hover {
+        color: var(--color-a) !important;
+      }
+    }
+
+    &--shadow {
+      color: var(--color-f);
+    }
+
+    &:hover {
+      color: var(--color-g);
+
+      &::before {
+        right: auto;
+        left: 0;
+
+        width: 100%;
+      }
+    }
+  }
+}

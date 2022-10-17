@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   order: 2;
-  width: fit-content;
+  width: 100%;
+
 @include laptop {
     display: none;
   }
@@ -11,6 +12,7 @@
 
 .nav-list {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
 
