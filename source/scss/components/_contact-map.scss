@@ -33,6 +33,20 @@
       transform: translate(-50%, -89%);
     }
 
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -33px;
+      left: 50%;
+
+      width: 17px;
+      height: 5px;
+
+      background-color: var(--bg-f);
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -51,6 +65,8 @@
   &__title {
     position: relative;
 
+    width: 100%;
+
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -61,8 +77,8 @@
     &:after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -100%;
+      left: 50%;
 
       width: 92px;
       height: 92px;
@@ -71,7 +87,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      transform: translateY(-50%);
+      transform: translate(-50%, -75%);
     }
   }
   p {

@@ -130,3 +130,33 @@ if (test) {
 
 
 
+
+
+const deliverySlider = new Swiper('.delivery-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  observer: true,
+  observeParents: true,
+  loop: true,
+  speed: 3000,
+
+  autoplay: {
+    delay: 2000,
+  },
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
+
+
+
+
+
+
+
