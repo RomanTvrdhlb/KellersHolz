@@ -1,11 +1,27 @@
 .wurst-list {
   display: grid;
 
+  background-color: var(--bg-i);
+
   grid-template-columns: repeat(4, auto);
 
+@include for-mobile {
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+  }
+
 @include tablet {
-    grid-gap: clamp(20px, 2.883vw, 41px) clamp(30px, 11.463vw, 163px);
+    grid-gap: clamp(20px, 2.883vw, 41px) 10px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+@include mobile {
+    width: fit-content;
+    padding: 15px 0;
+
+    grid-template-columns: 100%;
   }
 
   &__item {
@@ -13,6 +29,14 @@
     align-items: center;
 
     grid-gap: 12px;
+
+@include mobile {
+      padding: 0 15px;
+    }
+
+@include for-mobile {
+      opacity: initial;
+    }
   }
 
   &__name {

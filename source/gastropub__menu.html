@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header-black.html')
+
+  <main>
+    <div class="main-container--wurst main-container" style="background-image:url(img/sprite/backmain4.svg);">
+      <section class="wurst-first">
+        <div class="container container--mini">
+          <div class="wurst-top main-top">
+            <h2 class="main-top__title">Keller Holz Gastropub</h2>
+            <p>Мясной ресторан с одной из самых крупных в мире картой стейков и<br> кухней баварских провинций</p>
+          </div>
+
+  <div class='wurst-select select'>
+    <div class='wurst-select__header select__header'>
+      <span class='select__current'>Подробнее</span>
+      <div class='select__icon'>
+        <svg width="10" height="6">
+          <use href='img/sprite/sprite.svg#arrow-b3'></use>
+        </svg>
+      </div>
+    </div>
+    <div class='wurst-select__body select__body'>
+      <ul class='wurst-list select__wrapp'>
+        <li class="wurst-list__item select__item" data-choice='choosen'>
+          <div class="wurst-list__img">
+            <svg width="32" height="32">
+              <use href='img/sprite/sprite.svg#knife'></use>
+            </svg>
+          </div>
+          <div class="wurst-list__inner">
+          <h6 class="wurst-list__name">Кухня и блюда:</h6>
+          <span class="wurst-list__value">
+            Молдавская, баварская
+          </span>
+        </div>
+        </li>
+        <li class="wurst-list__item select__item" data-choice='choosen'>
+          <div class="wurst-list__img">
+            <svg width="32" height="32">
+              <use href='img/sprite/sprite.svg#time'></use>
+            </svg>
+          </div>
+          <div class="wurst-list__inner">
+          <h6 class="wurst-list__name">Время работы:</h6>
+          <span class="wurst-list__value">
+            12.00 - 00.00
+          </span>
+        </div>
+        </li>
+        <li class="wurst-list__item select__item" data-choice='choosen'>
+          <div class="wurst-list__img">
+            <svg width="32" height="32">
+              <use href='img/sprite/sprite.svg#geo'></use>
+            </svg>
+          </div>
+          <div class="wurst-list__inner">
+          <h6 class="wurst-list__name">Адрес:</h6>
+          <span class="wurst-list__value">
+            Кишинев, ул. Пушкина, 4
+          </span>
+          </div>
+        </li>
+        <li class="wurst-list__item select__item" data-choice='choosen'>
+          <div class="wurst-list__img">
+            <svg width="32" height="32">
+              <use href='img/sprite/sprite.svg#mobile'></use>
+            </svg>
+          </div>
+          <div class="wurst-list__inner">
+          <h6 class="wurst-list__name">Телефон для заказов:</h6>
+          <span class="wurst-list__value">
+            <a class="wurst-list__link" href="tel:+37369506441">+(373) 69 506 441;</a>
+            <a class="wurst-list__link"  href="tel:+37369506442">+(373) 69 506 442</a>
+          </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+        </div>
+
+
+      </section>
+    </div>
+
+    <section class="wurst-nav">
+      <div class="container container--mini">
+        
+          <ul class="wurst-nav__list">
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link--active wurst-nav__link" href="#">Горячие блюда</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Бургеры</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Десерты</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Котлеты</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Закуски</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Не мясо</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Суши</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Роллы</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Не мясо</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Салаты</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link" href="#">Супы</a>
+            </li>
+            <li class="wurst-nav__item">
+              <a class="wurst-nav__link--shadow wurst-nav__link" href="#">Еще</a>
+            </li>
+          </ul>
+        
+      </div>
+    </section>
+
+    <section class="wurst-menu">
+      <div class="container container--mini">
+        <div class="wurst-menu__pages main-top__pages">
+          <a href="index.html" class="wurst-menu__link--arrow wurst-menu__link">Главная</a>
+          <a href="wurst__menu.html" class="wurst-menu__link--arrow wurst-menu__link">Keller Holz Gastropub</a>
+          <a href="#" class="wurst-menu__link wurst-menu__link">Горячие блюда</a>
+        </div>
+
+        <ul class="delivery-menu">
+          <li class="delivery-menu__item">
+          <div class="delivery-menu__img">
+            <picture>
+              <source type='image/webp' srcset='img/gastropub/img1.webp'>
+              <img width='296' height='240' src='img/gastropub/img1.png' alt='image'>
+            </picture>
+          </div>
+
+          <h6 class="delivery-menu__title">Стейк Кафе де пари</h6>
+          <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+            <div class="delivery-menu__bottom">
+            <div class="delivery-menu__price">
+              <span class="delivery-menu__value">129 MDL</span>
+              <span class="delivery-menu__weight">/ 310 гр.</span>
+            </div>
+
+            <button class="delivery-menu__btn">
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#btn2'></use>
+              </svg>
+            </button>
+            </div>
+          </li>
+          <li class="delivery-menu__item">
+            <div class="delivery-menu__img">
+              <picture>
+                <source type='image/webp' srcset='img/gastropub/img2.webp'>
+                <img width='296' height='240' src='img/gastropub/img2.png' alt='image'>
+              </picture>
+            </div>
+  
+            <h6 class="delivery-menu__title">Стейк Махаон</h6>
+            <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+              <div class="delivery-menu__bottom">
+              <div class="delivery-menu__price">
+                <span class="delivery-menu__value">129 MDL</span>
+                <span class="delivery-menu__weight">/ 350 гр.</span>
+              </div>
+  
+              <button class="delivery-menu__btn">
+                <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#btn2'></use>
+                </svg>
+              </button>
+              </div>
+            </li>
+            <li class="delivery-menu__item">
+              <div class="delivery-menu__img">
+                <picture>
+                  <source type='image/webp' srcset='img/gastropub/img3.webp'>
+                  <img width='296' height='240' src='img/gastropub/img3.png' alt='image'>
+                </picture>
+              </div>
+    
+              <h6 class="delivery-menu__title">Стейк Квазимодо / Quasimodo steak</h6>
+              <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                <div class="delivery-menu__bottom">
+                <div class="delivery-menu__price">
+                  <span class="delivery-menu__value">140 MDL</span>
+                  <span class="delivery-menu__weight">/ 450 гр.</span>
+                </div>
+    
+                <button class="delivery-menu__btn">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#btn2'></use>
+                  </svg>
+                </button>
+                </div>
+              </li>
+              <li class="delivery-menu__item">
+                <div class="delivery-menu__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/gastropub/img4.webp'>
+                    <img width='296' height='240' src='img/gastropub/img4.png' alt='image'>
+                  </picture>
+                </div>
+      
+                <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                  <div class="delivery-menu__bottom">
+                  <div class="delivery-menu__price">
+                    <span class="delivery-menu__value">129 MDL</span>
+                    <span class="delivery-menu__weight">/ 350 гр.</span>
+                  </div>
+      
+                  <button class="delivery-menu__btn">
+                    <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#btn2'></use>
+                    </svg>
+                  </button>
+                  </div>
+                </li>
+                <li class="delivery-menu__item">
+                  <div class="delivery-menu__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/gastropub/img5.webp'>
+                      <img width='296' height='240' src='img/gastropub/img5.png' alt='image'>
+                    </picture>
+                  </div>
+        
+                  <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                  <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                    <div class="delivery-menu__bottom">
+                    <div class="delivery-menu__price">
+                      <span class="delivery-menu__value">129 MDL</span>
+                      <span class="delivery-menu__weight">/ 350 гр.</span>
+                    </div>
+        
+                    <button class="delivery-menu__btn">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#btn2'></use>
+                      </svg>
+                    </button>
+                    </div>
+                  </li>
+                  <li class="delivery-menu__item">
+                    <div class="delivery-menu__img">
+                      <picture>
+                        <source type='image/webp' srcset='img/gastropub/img6.webp'>
+                        <img width='296' height='240' src='img/gastropub/img6.png' alt='image'>
+                      </picture>
+                    </div>
+          
+                    <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                    <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                      <div class="delivery-menu__bottom">
+                      <div class="delivery-menu__price">
+                        <span class="delivery-menu__value">129 MDL</span>
+                        <span class="delivery-menu__weight">/ 350 гр.</span>
+                      </div>
+          
+                      <button class="delivery-menu__btn">
+                        <svg width='20' height='20'>
+                          <use href='img/sprite/sprite.svg#btn2'></use>
+                        </svg>
+                      </button>
+                      </div>
+                    </li>
+                    <li class="delivery-menu__item">
+                      <div class="delivery-menu__img">
+                        <picture>
+                          <source type='image/webp' srcset='img/gastropub/img7.webp'>
+                          <img width='296' height='240' src='img/gastropub/img7.png' alt='image'>
+                        </picture>
+                      </div>
+            
+                      <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                      <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                        <div class="delivery-menu__bottom">
+                        <div class="delivery-menu__price">
+                          <span class="delivery-menu__value">129 MDL</span>
+                          <span class="delivery-menu__weight">/ 350 гр.</span>
+                        </div>
+            
+                        <button class="delivery-menu__btn">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#btn2'></use>
+                          </svg>
+                        </button>
+                        </div>
+                      </li>
+                      <li class="delivery-menu__item">
+                        <div class="delivery-menu__img">
+                          <picture>
+                            <source type='image/webp' srcset='img/gastropub/img8.webp'>
+                            <img width='296' height='240' src='img/gastropub/img8.png' alt='image'>
+                          </picture>
+                        </div>
+              
+                        <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                        <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                          <div class="delivery-menu__bottom">
+                          <div class="delivery-menu__price">
+                            <span class="delivery-menu__value">129 MDL</span>
+                            <span class="delivery-menu__weight">/ 350 гр.</span>
+                          </div>
+              
+                          <button class="delivery-menu__btn">
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#btn2'></use>
+                            </svg>
+                          </button>
+                          </div>
+                        </li>
+                        <li class="delivery-menu__item">
+                          <div class="delivery-menu__img">
+                            <picture>
+                              <source type='image/webp' srcset='img/gastropub/img1.webp'>
+                              <img width='296' height='240' src='img/gastropub/img1.png' alt='image'>
+                            </picture>
+                          </div>
+                
+                          <h6 class="delivery-menu__title">Стейк Кафе де пари</h6>
+                          <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                            <div class="delivery-menu__bottom">
+                            <div class="delivery-menu__price">
+                              <span class="delivery-menu__value">129 MDL</span>
+                              <span class="delivery-menu__weight">/ 310 гр.</span>
+                            </div>
+                
+                            <button class="delivery-menu__btn">
+                              <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#btn2'></use>
+                              </svg>
+                            </button>
+                            </div>
+                          </li>
+                          <li class="delivery-menu__item">
+                            <div class="delivery-menu__img">
+                              <picture>
+                                <source type='image/webp' srcset='img/gastropub/img2.webp'>
+                                <img width='296' height='240' src='img/gastropub/img2.png' alt='image'>
+                              </picture>
+                            </div>
+                  
+                            <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                            <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                              <div class="delivery-menu__bottom">
+                              <div class="delivery-menu__price">
+                                <span class="delivery-menu__value">129 MDL</span>
+                                <span class="delivery-menu__weight">/ 350 гр.</span>
+                              </div>
+                  
+                              <button class="delivery-menu__btn">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#btn2'></use>
+                                </svg>
+                              </button>
+                              </div>
+                            </li>
+                            <li class="delivery-menu__item">
+                              <div class="delivery-menu__img">
+                                <picture>
+                                  <source type='image/webp' srcset='img/gastropub/img3.webp'>
+                                  <img width='296' height='240' src='img/gastropub/img3.png' alt='image'>
+                                </picture>
+                              </div>
+                    
+                              <h6 class="delivery-menu__title">Стейк Квазимодо / Quasimodo steak</h6>
+                              <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                <div class="delivery-menu__bottom">
+                                <div class="delivery-menu__price">
+                                  <span class="delivery-menu__value">140 MDL</span>
+                                  <span class="delivery-menu__weight">/ 450 гр.</span>
+                                </div>
+                    
+                                <button class="delivery-menu__btn">
+                                  <svg width='20' height='20'>
+                                    <use href='img/sprite/sprite.svg#btn2'></use>
+                                  </svg>
+                                </button>
+                                </div>
+                              </li>
+                              <li class="delivery-menu__item">
+                                <div class="delivery-menu__img">
+                                  <picture>
+                                    <source type='image/webp' srcset='img/gastropub/img4.webp'>
+                                    <img width='296' height='240' src='img/gastropub/img4.png' alt='image'>
+                                  </picture>
+                                </div>
+                      
+                                <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                                <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                  <div class="delivery-menu__bottom">
+                                  <div class="delivery-menu__price">
+                                    <span class="delivery-menu__value">129 MDL</span>
+                                    <span class="delivery-menu__weight">/ 350 гр.</span>
+                                  </div>
+                      
+                                  <button class="delivery-menu__btn">
+                                    <svg width='20' height='20'>
+                                      <use href='img/sprite/sprite.svg#btn2'></use>
+                                    </svg>
+                                  </button>
+                                  </div>
+                                </li>
+                                <li class="delivery-menu__item">
+                                  <div class="delivery-menu__img">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/gastropub/img5.webp'>
+                                      <img width='296' height='240' src='img/gastropub/img5.png' alt='image'>
+                                    </picture>
+                                  </div>
+                        
+                                  <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                                  <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                    <div class="delivery-menu__bottom">
+                                    <div class="delivery-menu__price">
+                                      <span class="delivery-menu__value">129 MDL</span>
+                                      <span class="delivery-menu__weight">/ 350 гр.</span>
+                                    </div>
+                        
+                                    <button class="delivery-menu__btn">
+                                      <svg width='20' height='20'>
+                                        <use href='img/sprite/sprite.svg#btn2'></use>
+                                      </svg>
+                                    </button>
+                                    </div>
+                                  </li>
+                                  <li class="delivery-menu__item">
+                                    <div class="delivery-menu__img">
+                                      <picture>
+                                        <source type='image/webp' srcset='img/gastropub/img6.webp'>
+                                        <img width='296' height='240' src='img/gastropub/img6.png' alt='image'>
+                                      </picture>
+                                    </div>
+                          
+                                    <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                                    <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                      <div class="delivery-menu__bottom">
+                                      <div class="delivery-menu__price">
+                                        <span class="delivery-menu__value">129 MDL</span>
+                                        <span class="delivery-menu__weight">/ 350 гр.</span>
+                                      </div>
+                          
+                                      <button class="delivery-menu__btn">
+                                        <svg width='20' height='20'>
+                                          <use href='img/sprite/sprite.svg#btn2'></use>
+                                        </svg>
+                                      </button>
+                                      </div>
+                                    </li>
+                                    <li class="delivery-menu__item">
+                                      <div class="delivery-menu__img">
+                                        <picture>
+                                          <source type='image/webp' srcset='img/gastropub/img7.webp'>
+                                          <img width='296' height='240' src='img/gastropub/img7.png' alt='image'>
+                                        </picture>
+                                      </div>
+                            
+                                      <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                                      <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                        <div class="delivery-menu__bottom">
+                                        <div class="delivery-menu__price">
+                                          <span class="delivery-menu__value">129 MDL</span>
+                                          <span class="delivery-menu__weight">/ 350 гр.</span>
+                                        </div>
+                            
+                                        <button class="delivery-menu__btn">
+                                          <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#btn2'></use>
+                                          </svg>
+                                        </button>
+                                        </div>
+                                      </li>
+                                      <li class="delivery-menu__item">
+                                        <div class="delivery-menu__img">
+                                          <picture>
+                                            <source type='image/webp' srcset='img/gastropub/img8.webp'>
+                                            <img width='296' height='240' src='img/gastropub/img8.png' alt='image'>
+                                          </picture>
+                                        </div>
+                              
+                                        <h6 class="delivery-menu__title">Стейк Махаон</h6>
+                                        <p>Стейк кафе де пари, соус грибной, масло подсолнечное, соль морская.</p>
+                                          <div class="delivery-menu__bottom">
+                                          <div class="delivery-menu__price">
+                                            <span class="delivery-menu__value">129 MDL</span>
+                                            <span class="delivery-menu__weight">/ 350 гр.</span>
+                                          </div>
+                              
+                                          <button class="delivery-menu__btn">
+                                            <svg width='20' height='20'>
+                                              <use href='img/sprite/sprite.svg#btn2'></use>
+                                            </svg>
+                                          </button>
+                                          </div>
+                                        </li>
+        </ul>
+      </div>
+    </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+
+
+  @include('partials/overlay.html')
+
+  <button class="lift" data-lift>
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

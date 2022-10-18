@@ -10,7 +10,18 @@
     padding: 25px 0;
 
     grid-gap: clamp(22px, 3.094vw, 44px);
+
+@include tablet {
+      width: 100%;
+      overflow-x: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
+
+
 
   &__link {
     position: relative;
@@ -21,6 +32,7 @@
     line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-a);
+    white-space: nowrap;
 
     transition: all 0.4s;
 

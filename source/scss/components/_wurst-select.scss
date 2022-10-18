@@ -1,0 +1,45 @@
+.wurst-select {
+  &__body {
+    @include for-mobile {
+      position: initial ;
+
+      display: block !important;
+      min-height: 120px;
+      margin-top: 0;
+
+      pointer-events: none;
+    }
+
+@include for-small-tablet {
+      min-height: 108px;
+    }
+
+@include for-tablet {
+      min-height: 40px;
+    }
+  }
+
+  &__header {
+    max-width: 90px ;
+
+@include for-mobile {
+      display: none !important;
+    }
+
+    &::before {
+      background-color: var(--bg-c);
+    }
+    .select__icon {
+      transform: scale(1);
+    }
+    .select__current {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      font-family: var(--font-family);
+      color: var(--color-f);
+      text-transform: uppercase;
+    }
+  }
+}
