@@ -1,0 +1,37 @@
+// .overlay {
+//   visibility: visible !important;
+//   opacity: 1 !important;
+// }
+
+.modals-inner {
+  z-index: 90;
+
+  display: none !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: -webkit-fill-available;
+  padding: 20px;
+
+  pointer-events: none;
+}
+
+.modals {
+  display: flex;
+  flex-direction: column;
+  min-width: 656px;
+  min-height: 581px;
+  padding: 48px 37px;
+
+  background-color: var(--bg-x);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 16px;
+
+  pointer-events: initial;
+
+  grid-gap: 35px;
+}
+
+

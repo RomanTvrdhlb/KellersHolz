@@ -1,0 +1,22 @@
+.modals-top {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    font-family: var(--font-family1);
+    text-align: center;
+    color: var(--color-b);
+  }
+
+  &__btn {
+    position: absolute;
+    top: -100%;
+    right: -3%;
+  }
+}

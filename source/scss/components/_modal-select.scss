@@ -1,0 +1,45 @@
+.modal-select {
+  &__header {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 20px;
+
+    background-color: var(--bg-a);
+    border: solid 1px var(--color-r);
+    border-radius: 6px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__wrapp {
+    background-color: var(--bg-x);
+    border: solid 1px var(--color-j);
+    border-radius: 6px;
+  }
+  &__item {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--font-family1);
+    color: var(--color-b);
+  }
+  &__current {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--font-family1);
+    color: var(--color-j);
+  }
+
+  &__icon {
+    transform: scale(1);
+  }
+}
+.select.active {
+  .modal-select__icon {
+    transform: scale(-1);
+  }
+}
