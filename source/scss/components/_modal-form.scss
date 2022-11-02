@@ -3,7 +3,10 @@
 
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+
+@include small-mobile {
+    grid-template-columns: 100%;
+  }  justify-items: center;
 
   &__input {
     width: 100%;
@@ -28,7 +31,13 @@
     grid-gap: 4px;
 
     &--area {
+      padding-bottom: 10px;
+
       grid-column: span 2;
+
+@include small-mobile {
+        grid-column: initial;
+      }
     }
   }
   &__name {
@@ -44,7 +53,6 @@
   &__area {
     width: 100%;
     min-height: 116px;
-    padding-bottom: 10px;
 
     font-size: 18px;
     font-family: var(--font-family);
@@ -63,9 +71,15 @@
     min-height: 45px;
     padding: 8px 54px;
 
+    font-size: clamp(13px, 0.938vw, 15px);
     text-transform: uppercase;
 
     grid-column: span 2;
+
+@include small-mobile {
+      grid-column: initial;
+    }
+
     &::before {
       display: none;
     }

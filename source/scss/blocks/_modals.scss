@@ -6,7 +6,6 @@
 .modals-inner {
   z-index: 90;
 
-  display: none !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,11 +17,12 @@
 }
 
 .modals {
-  display: flex;
+  display: none;
   flex-direction: column;
-  min-width: 656px;
+  justify-content: space-between;
+  max-width: 656px;
   min-height: 581px;
-  padding: 48px 37px;
+  padding: clamp(40px, 3vw, 48px) clamp(20px, 2.313vw, 37px);
 
   background-color: var(--bg-x);
   background-repeat: no-repeat;
@@ -32,6 +32,10 @@
   pointer-events: initial;
 
   grid-gap: 35px;
+
+  &.active {
+    display: flex;
+  }
 }
 
 
