@@ -28,11 +28,21 @@
 
 
 import _vars from '../_vars';
+import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} from '../functions/customFunctions'
 
 const showMore = document.querySelector('.order-adress__btn');
 const showItem = document.querySelector('.adress-form');
+const saveItem = [...document.querySelectorAll('.order-nav__btn')];
 
 showMore.addEventListener('click', function(){
-  showMore.classList.toggle('disable');
-  showItem.classList.toggle('active');
+  toggleCustomClass(showMore, 'disable');
+  toggleCustomClass(showItem, 'active');
 })
+
+saveItem.map(function(btn){
+  btn.addEventListener('click', function(){
+    removeCustomClass(showMore, 'disable');
+    removeCustomClass(showItem, 'active');
+  })
+})
+

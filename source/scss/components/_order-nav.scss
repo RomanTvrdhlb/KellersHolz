@@ -12,11 +12,11 @@
   }
   &__title {
     padding-bottom: 10px;
-    padding-left: clamp(20px, 4.134vw, 53px);
+    padding-left: clamp(5px, 4.134vw, 53px);
 
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(17px, 1.872vw, 24px);
+    font-size: clamp(15px, 1.872vw, 24px);
     line-height: 120%;
     font-family: var(--font-family1);
     color: var(--color-l);
@@ -36,13 +36,18 @@
     padding-bottom: clamp(100px, 13.261vw, 170px);
 
     grid-gap: clamp(10px, 2.73vw, 35px);
+
+@include mobile {
+      flex-grow: 1;
+    }
+
     &:before {
       content: "";
       position: absolute;
       bottom: 0;
       left: 50%;
 
-      width: 170px;
+      width: 55%;
       height: 2px;
 
       background-color: var(--color-j);
@@ -76,7 +81,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding-left: clamp(20px, 4.134vw, 53px);
+    padding-left: clamp(5px, 4.134vw, 53px);
 
     font-style: normal;
     font-weight: 400;
@@ -87,8 +92,14 @@
 
     transition: all 0.4s;
 
-    grid-gap: clamp(10px, 1.326vw, 17px);
+    grid-gap: clamp(5px, 1.326vw, 17px);
 
+@include mobile {
+      text-align: start;
+      svg {
+        display: none;
+      }
+    }
 
     &:before {
       content: "";
@@ -123,11 +134,29 @@
   &__exit {
     display: flex;
     align-items: center;
-    padding-left: clamp(20px, 4.134vw, 53px);
+    padding-left: clamp(5px, 4.134vw, 53px);
 
     transition: all 0.4s;
 
     grid-gap: clamp(10px, 1.326vw, 17px);
+
+@include mobile {
+      grid-gap: 0;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .order-nav__btn {
+      padding-left: 0;
+
+@include mobile {
+        width: 100%;
+
+        text-align: start;
+      }
+    }
 
     &:hover {
       transition: all 0.4s;

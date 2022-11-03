@@ -1,14 +1,25 @@
 .adress-form {
-  display: grid;
-
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 
   grid-gap: clamp(20px, 3.432vw, 44px);
   grid-template-columns: repeat(2, 1fr);
+
+@include tablet {
+    grid-template-columns: 100%;
+  }
+
+  .modal-form__name {
+    @include for-mobile {
+      white-space: nowrap;
+    }
+  }
   &__btn {
     max-width: 280px;
     min-height: 56px;
+
+@include mobile {
+      grid-column: initial;
+    }
   }
 
   &__right {
@@ -17,12 +28,26 @@
 
     grid-gap: clamp(15px, 2.028vw, 26px) clamp(25px, 3.432vw, 44px);
     grid-template-columns: repeat(3, 1fr);
+
+@include mobile {
+      align-items: end;
+
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__left {
     display: grid;
 
     grid-gap: clamp(15px, 2.028vw, 26px) clamp(25px, 3.432vw, 44px);
     grid-template-columns: repeat(3, 1fr);
+
+@include tablet {
+      order: 2;
+    }
+
+@include mobile {
+      grid-template-columns: 100%;
+    }
   }
 
   &__label {
@@ -30,17 +55,33 @@
     flex-direction: column;
     &--city {
       grid-column: span 3;
+
+@include mobile {
+        grid-column: initial;
+      }
     }
     &--place {
       grid-column: span 3;
+
+@include mobile {
+        grid-column: span 2;
+      }
     }
     &--phone {
       grid-column: span 3;
+
+@include mobile {
+        grid-column: initial;
+      }
     }
   }
 
   &__phone {
     position: relative;
+
+@include mobile {
+      grid-column: initial;
+    }
 
     svg {
       position: absolute;
@@ -48,6 +89,10 @@
       right: 4%;
 
       transform: translateY(-50%);
+
+@include mobile {
+        opacity: 0;
+      }
     }
   }
 
@@ -63,12 +108,12 @@
     }
   }
   &.active {
-    visibility: visible;
-    opacity: 1;
+    display: grid;
   }
 }
 
 .adress-select {
+  min-width: 100px;
   .select__header {
     background-color: var(--bg-z);
   }

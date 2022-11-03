@@ -1,6 +1,10 @@
 .order-content {
+  width: 100%;
   padding: clamp(30px, 3.744vw, 48px) clamp(30px, 3.12vw, 40px);
 
+  &__item {
+    width: 100%;
+  }
 
   &__title {
     display: flex;
@@ -19,7 +23,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    min-width: Min(71.217vw, 913px);
+    width: 100%;
 
     grid-gap: clamp(20px, 2.886vw, 37px);
   }

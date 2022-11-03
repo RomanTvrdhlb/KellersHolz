@@ -1,18 +1,23 @@
 .order-list {
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
 
   grid-gap: clamp(20px, 3.12vw, 40px);
 
+@include big-desktop {
+    overflow-x: auto;
+  }
 
   &__item {
     position: relative;
 
     display: grid;
+    width: 100%;
+    min-width: fit-content;
 
     grid-gap: clamp(35px, 3.12vw, 40px);
-    grid-template-columns: repeat(6, 1fr);
-
+    grid-template-columns: repeat(6, 114px);
     &:not(:last-child) {
       &:before {
         content: "";
@@ -42,6 +47,7 @@
     color: var(--color-l);
     white-space: nowrap;
     text-overflow: ellipsis;
+
 
     &--grey {
       color: var(--color-j);
