@@ -3,60 +3,40 @@ import { disableScroll } from '../functions/disable-scroll';
 import { enableScroll } from '../functions/enable-scroll';
 import { removeClassInArray,addCustomClass, removeCustomClass } from "../functions/customFunctions";
 
-function modalInit(buttonsArray, buttonAttribute ,activeClass) {
-  buttonsArray.map(function(btn){
-    btn.addEventListener('click', function(e) {
-      e.preventDefault()
-      const currentModalId = e.target.getAttribute(`${buttonAttribute}`)
-      addCustomClass(vars.overlay, activeClass);
-      addCustomClass(vars.overlay.querySelector(`[data-popup="${currentModalId}"]`), activeClass);
-      disableScroll();
-    });
-
-  })
-}
-
-vars.overlay?.addEventListener('click', function(e){
-  const closeBtn = vars.overlay.querySelector(`${'[data-popup]'+ '.' + vars.activeClass} .close`)
-  closeBtn && closeBtn.addEventListener('click', commonFunction());
-  if (e.target === vars.overlay) commonFunction();
-});
-
-modalInit(vars.modalsButton, "data-btn-modal", vars.activeClass);
-
+const {overlay, activeClass, modalsButton , modals} = vars;
+let innerButton;
 const commonFunction = function() {
-  removeCustomClass(vars.overlay, vars.activeClass);
-  removeClassInArray(vars.modals, vars.activeClass);
+  removeCustomClass(overlay, activeClass);
+  removeClassInArray(modals, activeClass);
   enableScroll();
 }
 
+function buttonClickHandler(e,buttonAttribute, activeClass) {
+  e.preventDefault();
+  const currentModalId = e.target.getAttribute(`${buttonAttribute}`);
+  const curentModal = overlay.querySelector(`[data-popup="${currentModalId}"]`);
 
+  addCustomClass(overlay, activeClass);
+  addCustomClass(curentModal, activeClass);
+  disableScroll();
+  innerButton = overlay.querySelector(`${'[data-popup]'}.${activeClass} .close`);
+  console.log(innerButton)
+}
 
+function overlayClickHandler(e, activeClass){
+  if (e.target === overlay || e.target === innerButton) {
+    commonFunction();
+    console.log(e.target)
+  }
 
+  
+}
 
+function modalInit(buttonsArray, buttonAttribute ,activeClass) {
+  buttonsArray.map(function(btn){
+    btn.addEventListener('click', (e) => buttonClickHandler(e, buttonAttribute, activeClass));
+  })
+}
 
-
-
-
-
-
-
-
-// if (overlay) {
-//   plunkModalBtns(propositionBtns,overlay,propositionModal);
-//   plunkModalBtns(identBtns,overlay,identModal);
-
-//   hideModalHandler(propositionModal);
-//   hideModalHandler(identMobileModal);
-//   hideModalHandler(identModal);
-
-//   overlay.addEventListener('click', function(e){
-//     if (e.target.classList.contains('overlay')) {
-//       hideModal(overlay,propositionModal);
-//       hideModal(overlay,identModal);
-//     }
-//   });
-// }
-
-
-
+overlay.addEventListener('click', function(e){overlayClickHandler(e, activeClass)});
+modalInit(modalsButton, "data-btn-modal", activeClass);

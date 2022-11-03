@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header-black.html')
+
+  <main>
+
+    <section class="order-first">
+      <div class="container container--mini">
+
+        <div class="order-tabs" data-tabs-parrent>
+
+
+          <div class="order-nav">
+
+            <span class="order-nav__title">Мой кабинет</span>
+
+            <ul class="order-nav__list">
+
+              <li class="order-nav__item">
+
+                <button class="order-nav__btn" type="button" data-tab="1">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#shop'></use>
+                  </svg>
+                  История заказов
+                </button>
+              </li>
+              <li class="order-nav__item">
+
+
+                <button class="order-nav__btn" type="button" data-tab="2">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#contact'></use>
+                  </svg>
+                  Личные данные
+                </button>
+              </li>
+              <li class="order-nav__item">
+
+
+                <button class="order-nav__btn" type="button" data-tab="3">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#loc1'></use>
+                  </svg>
+                  Адреса заказов
+                </button>
+              </li>
+              <li class="order-nav__item">
+                <button class="order-nav__btn" type="button" data-tab="4"><svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#gear'></use>
+                  </svg>
+                  Смена пароля
+                </button>
+              </li>
+            </ul>
+
+
+            <div class="order-nav__exit">
+
+              <div class="order-nav__img"> <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#exit'></use>
+                </svg>
+              </div>
+
+              <button class="order-nav__btn" type="button">Выход</button>
+
+            </div>
+
+          </div>
+
+
+
+
+          <ul class="order-content">
+            <li class="order-content__item active" data-tab-content="1">
+
+              <div class="order-content__inner">
+                <span class="order-content__title">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#shop'></use>
+                  </svg>
+                  История заказов
+                </span>
+                <ul class="order-list">
+                  <li class="order-list__item">
+                    <span class="order-list__name--grey order-list__name">Время и дата</span>
+                    <span class="order-list__name--grey order-list__name">Номер заказа</span>
+                    <span class="order-list__name--grey order-list__name">Ресторан</span>
+                    <span class="order-list__name--grey order-list__name">Адрес доставки</span>
+                    <span class="order-list__name--grey order-list__name">Сумма</span>
+                    <span class="order-list__name--grey order-list__name">Статус</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 14.06.2020</span>
+                    <span class="order-list__name">№136</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 15.06.2020</span>
+                    <span class="order-list__name">№146</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 16.06.2020</span>
+                    <span class="order-list__name">№156</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                </ul>
+              </div>
+
+
+
+            </li>
+            <li class="order-content__item" data-tab-content="2">
+
+              <div class="order-content__inner">
+                <span class="order-content__title">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#shop'></use>
+                  </svg>
+                  История заказов
+                </span>
+                <ul class="order-list">
+                  <li class="order-list__item">
+                    <span class="order-list__name--grey order-list__name">Время и дата</span>
+                    <span class="order-list__name--grey order-list__name">Номер заказа</span>
+                    <span class="order-list__name--grey order-list__name">Ресторан</span>
+                    <span class="order-list__name--grey order-list__name">Адрес доставки</span>
+                    <span class="order-list__name--grey order-list__name">Сумма</span>
+                    <span class="order-list__name--grey order-list__name">Статус</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 14.06.2020</span>
+                    <span class="order-list__name">№136</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 15.06.2020</span>
+                    <span class="order-list__name">№146</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 16.06.2020</span>
+                    <span class="order-list__name">№156</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                </ul>
+              </div>
+
+
+
+            </li>
+            <li class="order-content__item" data-tab-content="3">
+
+              <div class="order-content__inner">
+                <span class="order-content__title">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#loc1'></use>
+                  </svg>
+                  Адреса заказов
+                </span>
+
+                <div class="order-adress">
+                  <a class="order-adress__btn">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#add'></use>
+                    </svg>
+                    добавить новый адрес
+                  </a>
+
+                  <form action="#" class="adress-form">
+                    <div class="adress-form__left">
+                      <label for="#" class="adress-form__label--city adress-form__label">
+                        <span class="modal-form__name">Город*:</span>
+                        <div class='adress-select select'>
+                          <div class='modal-select__header select__header'>
+                            <span class='modal-select__current select__current'>Кишинев</span>
+                            <div class='modal-select__icon select__icon'>
+                              <svg width='14' height='8'>
+                                <use href='img/sprite/sprite.svg#arrow-b3'></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class='select__body'>
+                            <ul class='modal-select__wrapp select__wrapp'>
+                              <li class='modal-select__item select__item' data-choice='choosen'>Кишинев</li>
+                              <li class='modal-select__item select__item' data-choice='choosen'>Кишинев</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </label>
+                      <label for="#" class="adress-form__label">
+                        <span class="modal-form__name">№ дома*:</span>
+                        <input type="number" class="modal-form__input">
+                      </label>
+                      <label for="#" class="adress-form__label">
+                        <span class="modal-form__name">Подьезд:</span>
+                        <input type="number" class="modal-form__input">
+                      </label>
+                      <label for="#" class="adress-form__label">
+                        <span class="modal-form__name">Этаж:</span>
+                        <input type="number" class="modal-form__input">
+                      </label>
+                      <label for="#" class="adress-form__label--phone adress-form__label">
+                        <span class="modal-form__name">Номер телефона для подтверждения заказа*:</span>
+                        <div class="adress-form__phone">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#phone1'></use>
+                          </svg>
+                          <input type="tel" placeholder="+(373) ___  ___  ___  ___" class="modal-form__input">
+                        </div>
+                      </label>
+                      <button type="submit" class="adress-form__btn modal-form__btn yellow-btn">сохранить</button>
+                    </div>
+                    <div class="adress-form__right">
+                      <label for="#" class="adress-form__label--place  adress-form__label">
+                        <span class="modal-form__name">Улица*:</span>
+                        <div class="adress-form__loc">
+                          <svg width='15' height='19'>
+                            <use href='img/sprite/sprite.svg#loc2'></use>
+                          </svg>
+                          <input type="text" class="modal-form__input">
+                        </div>
+                      </label>
+
+                      <label for="#" class="adress-form__label">
+                        <span class="modal-form__name">Код домофона:</span>
+                        <input type="number" class="modal-form__input">
+                      </label>
+
+                      <label for="#" class="adress-form__label">
+                        <span class="modal-form__name">Кв\Офис:</span>
+                        <input type="number" class="modal-form__input">
+                      </label>
+
+                    </div>
+                  </form>
+
+
+                </div>
+
+
+              </div>
+
+
+
+            </li>
+            <li class="order-content__item" data-tab-content="4">
+
+              <div class="order-content__inner">
+                <span class="order-content__title">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#shop'></use>
+                  </svg>
+                  История заказов
+                </span>
+                <ul class="order-list">
+                  <li class="order-list__item">
+                    <span class="order-list__name--grey order-list__name">Время и дата</span>
+                    <span class="order-list__name--grey order-list__name">Номер заказа</span>
+                    <span class="order-list__name--grey order-list__name">Ресторан</span>
+                    <span class="order-list__name--grey order-list__name">Адрес доставки</span>
+                    <span class="order-list__name--grey order-list__name">Сумма</span>
+                    <span class="order-list__name--grey order-list__name">Статус</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 14.06.2020</span>
+                    <span class="order-list__name">№136</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 15.06.2020</span>
+                    <span class="order-list__name">№146</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                  <li class="order-list__item">
+                    <span class="order-list__name">12:20 / 16.06.2020</span>
+                    <span class="order-list__name">№156</span>
+                    <span class="order-list__name">Keller Holz Grill & Brew/KeleerHolz</span>
+                    <span class="order-list__name">Кишинев, ул. Индустриальная</span>
+                    <span class="order-list__name">1258 MDL</span>
+                    <span class="order-list__name">Доставлен</span>
+                  </li>
+                </ul>
+              </div>
+
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+
+  @include('partials/modals.html')
+
+  <button class="lift" data-lift>
+    <svg width='13' height='8'>
+      <use href='img/sprite/sprite.svg#arrow-top'></use>
+    </svg>
+  </button>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

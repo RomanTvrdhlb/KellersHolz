@@ -1,0 +1,75 @@
+.adress-form {
+  display: grid;
+
+  visibility: hidden;
+  opacity: 0;
+
+  grid-gap: clamp(20px, 3.432vw, 44px);
+  grid-template-columns: repeat(2, 1fr);
+  &__btn {
+    max-width: 280px;
+    min-height: 56px;
+  }
+
+  &__right {
+    display: grid;
+    align-content: start;
+
+    grid-gap: clamp(15px, 2.028vw, 26px) clamp(25px, 3.432vw, 44px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__left {
+    display: grid;
+
+    grid-gap: clamp(15px, 2.028vw, 26px) clamp(25px, 3.432vw, 44px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    &--city {
+      grid-column: span 3;
+    }
+    &--place {
+      grid-column: span 3;
+    }
+    &--phone {
+      grid-column: span 3;
+    }
+  }
+
+  &__phone {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &__loc {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+
+      transform: translateY(-50%);
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.adress-select {
+  .select__header {
+    background-color: var(--bg-z);
+  }
+}

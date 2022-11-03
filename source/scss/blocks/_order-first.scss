@@ -1,0 +1,17 @@
+.order-first {
+  position: relative;
+
+  padding-top: calc(var(--header-height) + clamp(20px, 4.68vw, 4.68vw));
+  padding-bottom: clamp(60px, 11.466vw, 147px);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background-color: var(--bg-b);
+  }
+}

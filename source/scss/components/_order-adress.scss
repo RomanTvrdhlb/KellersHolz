@@ -1,0 +1,43 @@
+.order-adress {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    min-height: 64px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: var(--font-family);
+    color: var(--color-l);
+    text-transform: uppercase;
+
+    border: solid 1px var(--color-l);
+    border-radius: 16px;
+
+    transition: all 0.4s;
+
+    grid-gap: 10px;
+    svg {
+      transition: all 0.4s;
+
+      fill: var(--color-l);
+    }
+
+    &:hover {
+      color: var(--color-f);
+
+      border: solid 1px var(--color-f);
+      svg {
+        fill: var(--color-f);
+      }
+    }
+
+    &.disable {
+      display: none;
+    }
+  }
+}

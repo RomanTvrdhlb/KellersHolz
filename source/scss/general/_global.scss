@@ -56,7 +56,7 @@ html {
     width: 100%;
     overflow-x: hidden;
   }
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 *,
@@ -261,5 +261,35 @@ input[type="number"] {
 
     background-color: transparent;
     box-shadow: none;
+  }
+}
+
+.modals {
+  position: absolute;
+  left: 50%;
+
+  margin: auto 0;
+
+  transform: translate(-50%,-100vh) scale(0);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 1s;
+  transition-delay: 0;
+
+  &.active {
+    position: relative;
+
+    transform: translate(-50%,0) scale(1);
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 1s;
+
+    pointer-events: initial;
+  }
+
+  .close svg {
+    pointer-events: none;
   }
 }

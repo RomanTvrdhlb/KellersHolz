@@ -1,0 +1,26 @@
+.order-content {
+  padding: clamp(30px, 3.744vw, 48px) clamp(30px, 3.12vw, 40px);
+
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: var(--font-family);
+    color: var(--color-l);
+
+    grid-gap: clamp(10px, 1.17vw, 15px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-width: Min(71.217vw, 913px);
+
+    grid-gap: clamp(20px, 2.886vw, 37px);
+  }
+}
